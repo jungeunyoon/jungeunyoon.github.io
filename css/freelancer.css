@@ -4,6 +4,290 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/*********/
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200|Open+Sans+Condensed:300|Inconsolata|Economica);
+@import url(http://fonts.googleapis.com/css?family=Kreon:400,700);
+
+html,body {
+  height: 100%;
+  background-color: #fff7f5;
+  /* The html and body elements cannot have any padding or margin. */
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans Condensed', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px; 
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.row {
+  margin-left:0px;
+  margin-right:0px;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  background-color: #fff7f4;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+  margin-top:50px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+
+#wrap > .container {
+  padding: 50px 0px 0px 0px;
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    color: #18bc9c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5
+h6 {
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+.about-text {
+	text-transform: none;
+    font-family: 'Open Sans Condensed', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    text-align: justify;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    color: #19211e;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  background: #18bc9c;
+  width:100%;
+  height: 100% !important;
+  /*min-height: 700px;*/
+  background-image:url(../img/backgrounds/1.jpg);
+  /*background-position: center top;*/
+background-repeat: no-repeat;
+
+  background-size:cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+header .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header .name-image {
+	text-align: center;
+	margin: auto;
+	padding: 5px;
+}
+
+
+header h1,header h2,header h3 a,header a,header a:hover {
+  color:#101010;
+  font-weight:300;
+  text-decoration:none;
+}
+
+header h3 {
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  background: #ffcc33;
+  padding:10px;
+  border-radius:3px;
+  font-size:24px;
+  padding:12px 10px 6px 10px;
+}
+
+header .dropdown-menu {
+  top:74px;
+  background: #ffcc33;
+  border-width:0;
+}
+
+h1 {
+  font-size:50px;
+}
+
+#nav {
+  width: 100%;
+  position:static;
+  top:-32px;
+}
+
+#nav.affix {
+   position: fixed;
+   top: 0;
+   z-index:10;
+   -webkit-transition: all .6s ease-in-out;
+}
+
+#footer > .container {
+  
+}
+
+@media (min-width: 767px) {
+  .navbar-nav.nav-justified > li{
+      float:none;
+  }
+}
+.navbar-nav {
+  margin: 1px 1px; 
+  text-align: center;
+}  
+  
+/* customize nav style */
+.navbar-custom {
+    background-color: #0e1525;
+    font-family: 'Open Sans Condensed', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px; 
+    border-width:0;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+    color: #e7eae6;
+    padding: 10px 0px 10px 0px
+}
+.navbar-custom  .navbar-nav>li>a {
+	color: #e7eae6;
+	text-align: center;
+	margin: auto;
+}
+.navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
+	background-color:#0e1525;
+	text-align: center;
+	margin: auto;
+}
+.navbar-custom .dropdown-menu{
+	right:0;
+}
+.navbar-custom .navbar-nav>.dropdown>a .caret {
+	border-top-color: #999;
+	border-bottom-color: #999;
+}
+
+.navbar-collapse.in { /*3.0.2 bug workaround*/
+    overflow-y: visible;
+}
+
+.navbar-toggle {
+	outline:0;
+}
+
+.divider {
+	height:100px;
+}
+
+.panel {
+	border-width:0;
+}
+
+@media (max-width: 768px) {
+	header {
+		height: 95px;
+	}
+}
+
+#map-canvas {
+  	width: 100%; 
+  	height: 300px;
+	margin: 0;
+	padding: 15px;
+}
+
+.scroll-top {
+   position:fixed;
+   bottom:0;
+   right:6%;
+   z-index:100;
+   background: #ffcc33;
+   font-size:24px;
+   border-top-left-radius:3px;
+   border-top-right-radius:3px;
+}
+.scroll-top a:link,.scroll-top a:visited {
+  color:#222;
+} 
+ 
+
+
+.bg-1 {
+	background: url('http://www.bootply.com/assets/example/bg_4.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg-2 {
+	background: url('http://www.bootply.com/assets/example/bg_5.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg-3 {
+	background: url('http://www.bootply.com/assets/example/bg_6.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg-4 {
+	padding-top:30px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(20,20,20,0.2)),to(rgba(255,255,255,0)), color-stop(1,#000));
+}
+
+
+
+/*********/
+/*
 body {
     overflow-x: hidden;
 }
@@ -79,38 +363,14 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
-header {
-    text-align: center;
-    color: #fff;
-    background: #18bc9c;
-}
 
-header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
 
-header img {
-    display: block;
-    margin: 0 auto 20px;
-}
+*/
 
-header .intro-text .name {
-    display: block;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 2em;
-    font-weight: 700;
-}
-
-header .intro-text .skills {
-    font-size: 1.25em;
-    font-weight: 300;
-}
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 200px;
+        padding-top: 0px;
         padding-bottom: 100px;
     }
 
@@ -147,6 +407,7 @@ header .intro-text .skills {
     }
 }
 
+/*
 .navbar {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -170,9 +431,17 @@ header .intro-text .skills {
     border: 0;
 }
 
+*/
+
+
 section {
-    padding: 100px 0;
+  color: #ffffff;
+  min-height: 400px;
+  /*height: auto !important;*/
+  height: auto !important;
+  padding-top:100px;
 }
+
 
 section h2 {
     margin: 0;
@@ -180,8 +449,13 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
-    background: #18bc9c;
+    height: auto !important;
+    min-height: 700px;
+    color: #0c120e;
+    background: #fff7f4;
+    background-image:url(../img/backgrounds/about_shorter.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 section.success a,
@@ -195,7 +469,7 @@ section.success a.active {
 
 @media(max-width:767px) {
     section {
-        padding: 75px 0;
+        padding: 25px 0;
     }
 
     section.first {
@@ -203,62 +477,6 @@ section.success a.active {
     }
 }
 
-#portfolio .portfolio-item {
-    right: 0;
-    margin: 0 0 15px;
-}
-
-#portfolio .portfolio-item .portfolio-link {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 400px;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background: rgba(24,188,156,.9);
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption:hover {
-    opacity: 1;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 20px;
-    margin-top: -12px;
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
-    margin-top: -12px;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
-    margin: 0;
-}
-
-#portfolio * {
-    z-index: 2;
-}
-
-@media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
-}
 
 .btn-outline {
     margin-top: 15px;
@@ -344,7 +562,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #2c3e50;
+    background-color: #2a4849;
 }
 
 footer .footer-col {
@@ -353,7 +571,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140;
+    background-color: #2a4849;
 }
 
 .btn-social {
@@ -394,52 +612,118 @@ footer .footer-below {
     outline: 0;
 }
 
+
+
 .portfolio-portfolio-project-details {
     font-size: 20px;
+    text-align: left;
+    font-family: 'Open Sans Condensed', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+
+
+.portfolio-portfolio-project-links {
+    text-align: center;
+}
+
+.portfolio-text {
+	text-align: justify;
+	line-height: 95%;
+	font-family: 'Open Sans Condensed', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.portfolio-hilight-text {
+	text-align: center;
+	line-height: 95%;
+	font-size: 20px;
+	font-style: italic;
+	font-family: 'Open Sans Condensed', Helvetica Neue, Helvetica, Arial, sans-serif;
+	margin-bottom: 25px; 
+	margin-top: 5px;
+	
+}
+
 
 .portfolio-portfolio-project-inner-details {
     text-align:left;
-}
-
-.portfolio-tab { 
-margin-left: 30px; }
-
-.portfolio-portfolio-project-information {
-    text-align: justify;
-    font-size: 20px;
+    font-family: 'Open Sans Condensed', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 
-.btn-social-portfolio {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: 2px solid #000;
-    border-radius: 100%;
+#portfolio {
+  background: #455456;
+  height: auto !important;
+  min-height: 900px;
+  background-image:url(../img/backgrounds/temp_portfolio.jpg);
+  /*background-position: center top;*/
+background-repeat: no-repeat;
+  background-size:cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(24,188,156,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
     text-align: center;
     font-size: 20px;
-    line-height: 45px;
+    color: #fff;
 }
 
-.btn-outline-portfolio {
-    margin-top: 15px;
-    border: solid 2px #000;
-    font-size: 20px;
-    color: #000;
-    background: 0 0;
-    transition: all .3s ease-in-out;
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
 }
 
 
-.portfolio-portfolio-project-line {
-    height: 3px;
-    background-color: #000;
-    min-height: 200px;
-}
 
 .portfolio-modal .modal-content {
-    padding: 100px 0;
+    padding: 50px 0;
     min-height: 100%;
     border: 0;
     border-radius: 0;
@@ -500,4 +784,24 @@ margin-left: 30px; }
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+.btn-outline-portfolio {
+    margin-top: 15px;
+    border: solid 2px #000;
+    font-size: 20px;
+    color: #000;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-social-portfolio {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
 }
