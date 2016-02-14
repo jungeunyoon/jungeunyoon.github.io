@@ -1,0 +1,107 @@
+/*!
+ * Theme: Soar
+ * By: Jung Eun Yoon
+*/
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200|Open+Sans+Condensed:300|Inconsolata|Economica);
+@import url(http://fonts.googleapis.com/css?family=Kreon:400,700);
+
+/*************************************
+ * BODY
+ *************************************/
+html,body {
+  height: 100%;
+  background-color: #fff;
+  font-family: 'Open Sans Condensed', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px; 
+}
+
+
+/*************************************
+ * HEADER
+ *************************************/
+header {
+  text-align: center;
+  color: #fff;
+  background: #F2F2F2;
+  width:100%;
+  height: 100% !important;
+  /*background-image:url(../img/backgrounds/1.jpg);*/
+  background-repeat: no-repeat;
+  background-size:cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+header .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header .name-image {
+	text-align: center;
+	margin: auto;
+	padding: 5px;
+}
+
+/*************************************
+ * SECTIONS
+ *************************************/
+ section {
+  color: #ffffff;
+  min-height: 400px;
+  /*height: auto !important;*/
+  height: auto !important;
+  padding-top:100px;
+}
+
+/*************************************
+ * ABOUT
+ *************************************/
+section.about {
+    height: auto !important;
+    min-height: 700px;
+    color: #0c120e;
+    background: #FF7066;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*************************************
+ * PORTFOLIO
+ *************************************/
+section.portfolio {
+    height: auto !important;
+    min-height: 700px;
+    color: #0c120e;
+    background: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-title {
+	position: relative;
+	top: 10px;
+	left: 0px;
+	background: #000;
+	height: 50px;
+	width: 250px;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+}
+
+/*************************************
+ * PORTFOLIO
+ *************************************/
+section.contact {
+    height: auto !important;
+    min-height: 700px;
+    color: #0c120e;
+    background: FF7066;
+    background-position: center;
+    background-repeat: no-repeat;
+}
