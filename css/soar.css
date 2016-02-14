@@ -25,7 +25,7 @@ html,body {
 header {
   text-align: center;
   color: #fff;
-  background: #F2F2F2;
+  background: #FFF;
   width:100%;
   height: 100% !important;
   /*background-image:url(../img/backgrounds/1.jpg);*/
@@ -48,15 +48,48 @@ header .name-image {
 }
 
 /*************************************
+ * CONTAINER
+ *************************************/
+.container {
+  padding-left: 0px !important;
+  width: 100% !important;
+}
+
+/*************************************
  * SECTIONS
  *************************************/
  section {
   color: #ffffff;
   min-height: 400px;
-  /*height: auto !important;*/
   height: auto !important;
-  padding-top:100px;
+  padding: 50px 0px 0px 50px;
 }
+
+.section-title {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background: #000;
+	height: 50px;
+	width: 250px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.section-title:after{
+    content:"";
+    width:0;
+    height:0;
+    border-top:35px solid transparent;
+    border-bottom:35px solid transparent;
+    border-left:35px solid #000000;
+    position: absolute;
+    top: 0px;
+    left: 270px;
+}
+
 
 /*************************************
  * ABOUT
@@ -82,17 +115,6 @@ section.portfolio {
     background-repeat: no-repeat;
 }
 
-.section-title {
-	position: relative;
-	top: 10px;
-	left: 0px;
-	background: #000;
-	height: 50px;
-	width: 250px;
-	color: #fff;
-	font-size: 20px;
-	padding: 10px;
-}
 
 /*************************************
  * PORTFOLIO
@@ -101,7 +123,7 @@ section.contact {
     height: auto !important;
     min-height: 700px;
     color: #0c120e;
-    background: FF7066;
+    background: #FF7066;
     background-position: center;
     background-repeat: no-repeat;
 }
