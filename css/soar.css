@@ -64,7 +64,7 @@ section {
   color: #ffffff;
   min-height: 400px;
   height: auto !important;
-  padding: 50px 0px 50px 0px;
+  padding: 59px 0px 0px 0px;
 }
 
 .section-title {
@@ -138,7 +138,7 @@ section.contact {
 }
 
 .portfolio-grid {
-	padding: 20px 0px 0px 0px;
+	padding: 50px 0px 0px 0px;
 }
 
 /*************************************
