@@ -53,18 +53,19 @@ header .name-image {
 	padding: 5px;
 }
 
-.crossword-container {
-  margin: 10% auto 10% auto;
-  display: inline-block;
-  padding: 10px;
-  /*background: #000;*/
-}
 
 .letters {
   position: relative;
 }
 
 @media only screen and (max-width: 550px) {
+.crossword-container {
+  margin: 11% auto 10% auto;
+  display: inline-block;
+  padding: 10px;
+  /*background: #000;*/
+}
+
   .letter {
     float: left;
     width: 10px;
@@ -79,6 +80,14 @@ header .name-image {
 }
 
 @media only screen and (max-width: 780px) {
+
+.crossword-container {
+  margin: 11% auto 10% auto;
+  display: inline-block;
+  padding: 10px;
+  /*background: #000;*/
+}
+
   .letter {
     float: left;
     width: 30px;
@@ -92,7 +101,15 @@ header .name-image {
   }
 }
 
-@media only screen and (min-width: 781px) {
+@media only screen and (max-width: 1281px) {
+
+.crossword-container {
+  margin: 11% auto 10% auto;
+  display: inline-block;
+  padding: 10px;
+  /*background: #000;*/
+}
+
   .letter {
     float: left;
     width: 50px;
@@ -102,6 +119,28 @@ header .name-image {
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 1282px) {
+
+.crossword-container {
+  margin: 17% auto 10% auto;
+  display: inline-block;
+  padding: 10px;
+  /*background: #000;*/
+}
+
+  .letter {
+    float: left;
+    width: 59px;
+    height: 59px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
     font-weight: bold;
   }
 }
@@ -229,7 +268,7 @@ text-align: justify;
 
 @media only screen and (min-width: 781px) {
   .portfolio-container {
-    padding: 0 30px 0px 0px;
+    padding: 0px 35px 0px 0px;
 	}
 }
 
@@ -289,7 +328,7 @@ background-repeat: no-repeat;
 
 #portfolio .portfolio-item {
     right: 0;
-    margin: 0 0px 15px 0px;
+    margin: 0 0px 10px 0px;
 	border: 1px solid #E3E3E3;
 	padding: 5px;
 }
@@ -376,32 +415,33 @@ background-repeat: no-repeat;
 
 
 .outer {
-	width: 75%;
+	width: 750px;
+	height: 550px;
 	position: relative;
 	margin: 10% auto;
-	
-	height: auto;
-	border-radius: 0px;
+	border-radius: 5px;
 	background: #fff;
 }
 
 #modalLeft {
-    height:500px;
-    width:50%;
+    height: 100%;
+    width:300px;
     padding: 10px;
     float: left;
-background: #E6E6E6;
+    background: #42BBE3;
+   /* background: url(http://i.imgur.com/x2SrDlN.jpg) 50% 50% / cover no-repeat;*/
     padding:5px; 
+    border-radius: 3px 0px 0px 3px;
 }
 
 #modalRight {
-    width:50%;
-        height:500px;
+    width:450px;
+    height: 100%
 float:right;
 padding: 10px;
 	background: #fff;
     padding:10px; 
-
+    border-radius: 30px 3px 3px 0px;
 }
 
 
@@ -410,9 +450,9 @@ padding: 10px;
 	color: #FFFFFF;
 	line-height: 25px;
 	position: absolute;
-	right: -12px;
-	text-align: center;
-	top: -10px;
+	right: -0px;
+	top: 0px;
+		text-align: center;
 	width: 24px;
 	text-decoration: none;
 	font-weight: bold;
