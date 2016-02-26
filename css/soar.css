@@ -415,7 +415,7 @@ background-repeat: no-repeat;
 
 
 .outer {
-	width: 750px;
+	width:  auto;
 	height: 550px;
 	position: relative;
 	margin: 10% auto;
@@ -472,7 +472,7 @@ padding: 10px;
     padding: 0px 0;
     position: relative;
     	margin: 5% auto;
-    width: 63%;
+    width: 800px;
     height: 77%;
     border: 0;
     border-radius: 0;
