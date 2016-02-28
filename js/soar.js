@@ -15,24 +15,17 @@ for (var r = 0; r < 9; r++) {
   }
 }
 
+// assigns final letter depending on letter position and calls helper functions to display them 
 function setLetter(letterDivID, delayTime) {
-  /* assigns final letter depending on letter position and calls helper functions to display them
-   */
   switch (letterDivID) {
-    case '01':
+    case '04':
       setSpecialLetter(letterDivID, 'H', delayTime);
       break;
-    case '02':
+    case '05':
       setSpecialLetter(letterDivID, 'E', delayTime);
       break;
-    case '03':
-      setSpecialLetter(letterDivID, 'L', delayTime);
-      break;
-    case '04':
-      setSpecialLetter(letterDivID, 'L', delayTime);
-      break;
-    case '05':
-      setSpecialLetter(letterDivID, '0', delayTime);
+    case '06':
+      setSpecialLetter(letterDivID, 'Y', delayTime);
       break;
     case '08':
       setSpecialLetter(letterDivID, 'I', delayTime);
@@ -40,26 +33,99 @@ function setLetter(letterDivID, delayTime) {
     case '09':
       setSpecialLetter(letterDivID, 'M', delayTime);
       break;
-    case '12':
+    case '11':
       setSpecialLetter(letterDivID, 'J', delayTime);
       break;
+    case '12':
+      setSpecialLetter(letterDivID, 'A', delayTime);
+      break;
     case '13':
-      setSpecialLetter(letterDivID, 'U', delayTime);
+      setSpecialLetter(letterDivID, 'I', delayTime);
       break;
     case '14':
-      setSpecialLetter(letterDivID, 'N', delayTime);
+      setSpecialLetter(letterDivID, 'M', delayTime);
       break;
     case '15':
+      setSpecialLetter(letterDivID, 'E', delayTime);
+      break;
+    case '25':
+      setSpecialLetter(letterDivID, 'Y', delayTime);
+      break;
+    case '26':
+      setSpecialLetter(letterDivID, 'O', delayTime);
+      break;
+    case '27':
+      setSpecialLetter(letterDivID, 'O', delayTime);
+      break;
+     case '28':
+      setSpecialLetter(letterDivID, 'N', delayTime);
+      break;
+      
+      
+    case '40':
+      setSpecialLetter(letterDivID, 'P', delayTime);
+      break;
+    case '41':
+      setSpecialLetter(letterDivID, 'R', delayTime);
+      break;
+    case '42':
+      setSpecialLetter(letterDivID, 'O', delayTime);
+      break;
+    case '43':
       setSpecialLetter(letterDivID, 'G', delayTime);
       break;
+    case '44':
+      setSpecialLetter(letterDivID, 'R', delayTime);
+      break;
+    case '45':
+      setSpecialLetter(letterDivID, 'A', delayTime);
+      break;
+    case '46':
+      setSpecialLetter(letterDivID, 'M', delayTime);
+      break;
+     case '47':
+      setSpecialLetter(letterDivID, 'M', delayTime);
+      break;
+        case '48':
+      setSpecialLetter(letterDivID, 'E', delayTime);
+      break;
+     case '49':
+      setSpecialLetter(letterDivID, 'R', delayTime);
+      break;
+
+        
+            case '52':
+      setSpecialLetter(letterDivID, 'D', delayTime);
+      break;
+    case '53':
+      setSpecialLetter(letterDivID, 'E', delayTime);
+      break;
+    case '54':
+      setSpecialLetter(letterDivID, 'S', delayTime);
+      break;
+    case '55':
+      setSpecialLetter(letterDivID, 'I', delayTime);
+      break;
+    case '56':
+      setSpecialLetter(letterDivID, 'G', delayTime);
+      break;
+     case '57':
+      setSpecialLetter(letterDivID, 'N', delayTime);
+      break;
+        case '58':
+      setSpecialLetter(letterDivID, 'E', delayTime);
+      break;
+     case '59':
+      setSpecialLetter(letterDivID, 'R', delayTime);
+      
     default:
       setRandomLetter(letterDivID, delayTime);
       break;
   }
 }
 
+// displays random letter 
 function setRandomLetter(letterDivID, delayTime) {
-
   var counter = 0;
 
   function changeText() {
@@ -73,6 +139,7 @@ function setRandomLetter(letterDivID, delayTime) {
   setInterval(changeText, 150);
 }
 
+// displays pre-determined special letters to spell out message
 function setSpecialLetter(letterDivID, specialLetter, delayTime) {
 
   var counter = 0;
@@ -91,6 +158,7 @@ function setSpecialLetter(letterDivID, specialLetter, delayTime) {
 
 }
 
+// returns one random capital letter from A-Z
 function randomLetter() {
   var chars = "ABCDEFGHIJKLMNOPQRSTUVWXTZ";
   var string_length = 1;
