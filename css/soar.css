@@ -307,11 +307,6 @@ text-align: justify;
 /*************************************
  * PORTFOLIO
  *************************************/
-
-
-
-
-
 /*
 #portfolio {
   background: #fff;
@@ -388,10 +383,51 @@ background-repeat: no-repeat;
 }
 
 
+/*************************************
+ * PORTFOLIO
+ *************************************/
+ 
+ .modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  outline: 0;
+}
+
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 700px;
+    margin: 7% auto;
+    height: 500px;
+    overflow-y: hidden;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  .modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+    margin: 12% auto;
+    height: 700px;
+  }
+}
 
 /*MODAL */
 
 
+/*
 .modalDialog {
 	position: fixed;
 	font-family: Arial, Helvetica, sans-serif;
@@ -429,7 +465,6 @@ background-repeat: no-repeat;
     padding: 10px;
     float: left;
     background: #42BBE3;
-   /* background: url(http://i.imgur.com/x2SrDlN.jpg) 50% 50% / cover no-repeat;*/
     padding:5px; 
     border-radius: 3px 0px 0px 3px;
 }
@@ -556,3 +591,5 @@ padding: 10px;
     font-size: 20px;
     line-height: 45px;
 }
+
+*/
