@@ -3,6 +3,7 @@
  * By: Jung Eun Yoon
 */
 
+
 var idName = '';
 var delayNum = 0;
 var elements = document.getElementsByClassName('letter');
@@ -131,6 +132,7 @@ function setRandomLetter(letterDivID, delayTime) {
   function changeText() {
     if (counter > delayTime) {
       clearInterval();
+      return;
     } else {
       document.getElementById(letterDivID).innerText = randomLetter();
       counter++;
@@ -149,6 +151,7 @@ function setSpecialLetter(letterDivID, specialLetter, delayTime) {
       document.getElementById(letterDivID).innerText = specialLetter;
       document.getElementById(letterDivID).style.color = '#FF6363';
       clearInterval();
+      return;
     } else {
       document.getElementById(letterDivID).innerText = randomLetter();
       counter++;
