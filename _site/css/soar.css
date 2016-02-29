@@ -232,9 +232,11 @@ section.about {
     text-align: center;
     margin: 0px auto 0px auto;
     width: 100%;
-    min-height: 730px;
+    min-height: 330px;
     height: auto;
     background: #d2d6dc;
+    
+    background: -webkit-linear-gradient(#A8B0BD, #E9F0F2); /* For Safari 5.1 to 6.0 */
 }
 section.timeline {
     text-align: center;
@@ -251,20 +253,22 @@ section.portfolio {
     background: #E9F0F2;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 35px;
+    padding-bottom: 70px;
 }
 section.contact {
     height: auto;
     min-height: 700px;
     color: #0c120e;
     background: #C4CBD2;
+        background: -webkit-linear-gradient(#E9F0F2, #A8B0BD); /* For Safari 5.1 to 6.0 */
     background-position: center;
     background-repeat: no-repeat;
+    padding-bottom: 100px;
 }
 
 @media (min-width: 1391px) {
 section {
-min-height: 85vh !important;
+min-height: 75vh !important;
 padding-top: 120px;
 }
 }
@@ -279,6 +283,7 @@ padding-top: 120px;
 }
 
 .about-image-outside {
+margin: 0px 150px 0px 150px;
 border: 10px solid #FFF;
 border-radius: 50%;
 -moz-border-radius: 50%;
@@ -291,6 +296,95 @@ border-radius: 50%;
 -moz-border-radius: 50%;
 -webkit-border-radius: 50%;
 }
+
+
+
+.about-words {
+text-align: right;
+padding: 20px 100px 0px 0px;
+}
+.about-words h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    line-height: 100%;
+    margin: 0px;
+}
+
+.about-words h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    line-height: 100%;
+    margin: 0px;
+}
+
+
+@media (max-width: 607px) {
+.about-words h1 {
+font-size: 35px;
+letter-spacing: 10px;
+}
+
+.about-words h2 {
+font-size: 23px;
+letter-spacing: 3px;
+}
+
+}
+@media (min-width: 608px) {
+.about-words h1 {
+font-size: 30px;
+letter-spacing: 30px;
+}
+
+.about-words h2 {
+font-size: 35px;
+letter-spacing: 3px;
+}
+
+}
+@media (min-width: 768px) {
+.about-words h1 {
+font-size: 27px;
+letter-spacing: 30px;
+}
+
+.about-words h2 {
+font-size: 40px;
+letter-spacing: 3px;
+}
+
+}
+@media (min-width: 998px) {
+.about-words h1 {
+font-size: 30px;
+letter-spacing: 30px;
+}
+
+.about-words h2 {
+font-size: 50px;
+letter-spacing: 5px;
+}
+
+}
+@media (min-width: 1391px) {
+.about-words h1 {
+font-size: 20px;
+letter-spacing: 10px;
+}
+
+.about-words h2 {
+font-size: 37px;
+letter-spacing: 10px;
+}
+
+}
+
+
+
 /*************************************
  * CONTACT
  *************************************/
