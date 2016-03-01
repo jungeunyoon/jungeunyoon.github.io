@@ -266,6 +266,17 @@ section.contact {
     padding-bottom: 100px;
 }
 
+
+@media (min-width: 998px) {
+section {
+min-height: 75vh !important;
+padding-top: 120px;
+}
+section.portfolio {
+    padding-top: 150px;
+}
+}
+
 @media (min-width: 1391px) {
 section {
 min-height: 75vh !important;
@@ -360,12 +371,12 @@ letter-spacing: 3px;
 }
 @media (min-width: 998px) {
 .about-words h1 {
-font-size: 30px;
-letter-spacing: 30px;
+font-size: 23px;
+letter-spacing: 10px;
 }
 
 .about-words h2 {
-font-size: 50px;
+font-size: 40px;
 letter-spacing: 5px;
 }
 
