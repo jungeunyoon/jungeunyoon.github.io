@@ -59,30 +59,9 @@ header .name-image {
     position: relative;
 }
 
-@media only screen and (max-width: 550px) {
+@media (max-width: 607px) {
     .crossword-container {
-        margin: 11% auto 10%;
-        display: inline-block;
-        padding: 10px;
-    /*background: #000;*/
-    }
-
-    .letter {
-        float: left;
-        width: 10px;
-        height: 10px;
-        text-align: center;
-        color: #fff;
-        text-transform: uppercase;
-        font-family: 'Quicksand',sans-serif;
-        font-size: 5.4vw;
-        font-weight: 700;
-    }
-}
-
-@media only screen and (max-width: 780px) {
-    .crossword-container {
-        margin: 11% auto 10%;
+        margin: 13% auto 10%;
         display: inline-block;
         padding: 10px;
     /*background: #000;*/
@@ -101,7 +80,7 @@ header .name-image {
     }
 }
 
-@media only screen and (max-width: 1281px) {
+@media (min-width: 608px) {
     .crossword-container {
         margin: 11% auto 10%;
         display: inline-block;
@@ -122,7 +101,28 @@ header .name-image {
     }
 }
 
-@media only screen and (min-width: 1282px) {
+@media (min-width: 998px) {
+    .crossword-container {
+        margin: 11% auto 10%;
+        display: inline-block;
+        padding: 10px;
+    /*background: #000;*/
+    }
+
+    .letter {
+        float: left;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Quicksand',sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 1391px) {
     .crossword-container {
         margin: 17% auto 10%;
         display: inline-block;
@@ -142,6 +142,10 @@ header .name-image {
         font-weight: 700;
     }
 }
+
+
+
+
 
 #clr {
     clear: left;
