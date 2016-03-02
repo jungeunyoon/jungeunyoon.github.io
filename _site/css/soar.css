@@ -272,11 +272,12 @@ section.contact {
     section {
         min-height: 75vh !important;
         padding-top: 120px;
+        padding-bottom: 59px;
     }
 
-    section.portfolio {
+    /*section.portfolio {
         padding-top: 150px;
-    }
+    }*/
 }
 
 @media (min-width: 1391px) {
