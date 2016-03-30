@@ -1,4 +1,4 @@
-    var element_position = $('#contact').offset().top;
+    var element_position = $('#contact').offset().top+200;
     
     var $doc = $(document),
     $win = $(window),
@@ -24,7 +24,7 @@ if (scrollPercentage >= 0.99) {
     path.style.strokeDasharray = pathLength + ' ' + pathLength;
   }
   
-     if ($(window).scrollTop() >= $(document).height() - $(window).height() - 10) {
+     if ($(window).scrollTop() >= ($(document).height() - $(window).height() - 30)) {
       document.getElementById('hideaway').style.display='block';
       document.getElementById('hideaway1').style.display='block';
    }
