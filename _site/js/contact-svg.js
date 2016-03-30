@@ -26,6 +26,7 @@ if (scrollPercentage >= 0.99) {
   
      if ($(window).scrollTop() >= $(document).height() - $(window).height() - 10) {
       document.getElementById('hideaway').style.display='block';
+      document.getElementById('hideaway1').style.display='block';
    }
 });
 
