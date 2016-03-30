@@ -66,6 +66,10 @@
       document.getElementById('hideaway').style.display='block';
        document.getElementById('hideaway1').style.display='block';
 
+} else if (prog > .90) {
+      document.getElementById('hideaway').style.display='block';
+       document.getElementById('hideaway1').style.display='block';
+
             } else if ( prog == 0  || prog < .09) {
             
                   document.getElementById('hideaway').style.display='none';
