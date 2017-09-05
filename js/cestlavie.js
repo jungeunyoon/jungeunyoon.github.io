@@ -1,17 +1,89 @@
-/*!
- * Theme: 
- * By: Jung Eun Yoon
-*/
-
-
 /* 
-SCALES AND ARPEGGIOS
 Written By: Jaime J.E. Yoon
-Inspiration: @Oudam Uy https://dribbble.com/shots/2416166-Simple-Keyboard
 */
 
 $(document).ready(function() {
 
+  
+  // set background colors
+  $('.set-background').each(function(index, object) {
+    var backgroundColor = $(object).data('background-color');
+    if( backgroundColor ) {
+      $(object).css( 'background-color', backgroundColor );
+    }
+});
+  
+  
+  $(document).on('scroll', function() {
+    // anchor postions
+    var aboutSectionPosition = $('#anchor-about').position().top - 50;
+    var portfolioSectionPosition = $('#anchor-portfolio').position().top - 50;
+    var testimonialsSectionPosition = $('#anchor-testimonials').position().top + 80;
+    var contactsSectionPosition = $('#anchor-contacts').position().top - 80;
+    var currentPosition = $(this).scrollTop();
+    
+    // sets all btns to default color
+    
+    /*$( "sidebar-link" ).each(function( index ) {
+  $( this ).removeClass( "accent-color" );
+    
+    
+});*/
+    $( ".sidebar-link" ).removeClass( "accent-color" );
+        
+          
+    // in main section
+    if( currentPosition < aboutSectionPosition ){ 
+
+$( "#sidebar-main-btn" ).addClass( "accent-color" );
+    }
+    // in about section
+    else if ( currentPosition >= aboutSectionPosition && currentPosition < portfolioSectionPosition ) {
+      $( "#sidebar-about-btn" ).addClass( "accent-color" );
+    }    
+    // in portfolio section
+    else if ( currentPosition >= portfolioSectionPosition && currentPosition < contactsSectionPosition ) {
+      $( "#sidebar-portfolio-btn" ).addClass( "accent-color" );
+    } 
+    // in contacts section
+    else {
+      $( "#sidebar-contacts-btn" ).addClass( "accent-color" );
+    }
+})
+
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  
+  
+  
+  $( "#sidebar-testimonials-btn" ).click(function() {
+  $("#testimonials-alert").show();
+setTimeout(function() { $("#testimonials-alert").hide(); }, 9000);
+});
+  
+  
+  
   // This controls the button for the mid-d note.
 
   // This variable calls the mid-d audio element in the HTML.
