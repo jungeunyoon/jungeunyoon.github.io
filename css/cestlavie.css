@@ -3,9 +3,6 @@
  *************************************/
 @import url("https://fonts.googleapis.com/css?family=Karla:400,700");
 /*************************************
- * Variables
- *************************************/
-/*************************************
  * Global
  *************************************/
 .cell-center {
@@ -13,6 +10,10 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -55,7 +56,7 @@ h2.background:before {
 }
 h2.background span {
   /* to hide the lines from behind the text, you have to set the background color the same as the container */
-  background: #d3cdce;
+  background-color: #d3cdce;
   padding: 10px 10px 10px 20px;
   margin-bottom: 100px;
   text-align: center;
@@ -125,23 +126,29 @@ a.navbar-brand {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
   z-index: 100000;
   padding: 10px;
   font-size: 13px;
   text-transform: none;
   text-align: center;
   border-radius: 3px;
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
   letter-spacing: 1px;
   font-weight: 400;
 }
 
 .success-message {
-  background: #fafafa;
+  background-color: #fafafa;
   border: 1px solid #d77e7e;
 }
 
 .error-message {
-  background: #fafafa;
+  background-color: #fafafa;
   border: 1px solid #d77e7e;
 }
 
@@ -175,7 +182,7 @@ a.navbar-brand {
   width: 250px;
   height: 100%;
   margin-left: -250px;
-  background: #fafafa;
+  background-color: #fafafa;
   border-right: 1px solid #e2e2e2;
   overflow: hidden;
 }
@@ -193,12 +200,10 @@ a.navbar-brand {
     left: 90px;
     top: 137px;
     z-index: 10000;
-  -ms-transform: rotate(-90deg);
-  /* IE 9 */
-  -webkit-transform: rotate(-90deg);
-  /* Safari */
-  transform: rotate(-90deg);
-  /* Standard syntax */
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
 }
 #sidebar-wrapper .sidebar-menu #sidebar-title-container #sidebar-title {
     color: #999;
@@ -210,14 +215,12 @@ a.navbar-brand {
     left: 7px;
     letter-spacing: 5px;
     text-align: center;
-
 }
 
 #sidebar-wrapper .sidebar-menu #sidebar-title-container #sidebar-title .title {
-background: #fafafa;
+    background-color: #fafafa;
     padding-right: 3px;
     padding-left: 3px;
-
 }
 
 #sidebar-wrapper .sidebar-menu #sidebar-title-container #sidebar-title::before {
@@ -258,6 +261,8 @@ background: #fafafa;
   height: 35px;
   font-size: 18px;
   border-radius: 3px;
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
   color: #ccc;
   text-align: center;
   margin: 5px auto 0px auto;
@@ -276,7 +281,7 @@ section {
 
 section.main {
   padding-top: 150px;
-  background: #3b3f45;
+  background-color: #3b3f45;
   height: 95vh;
   min-height: 330px;
   position: relative;
@@ -290,7 +295,7 @@ section.about::before {
   top: -56px;
   width: 100%;
   height: 170px;
-  background: #3b3f45;
+  background-color: #3b3f45;
   -webkit-transform: skewY(3.5deg);
   -moz-transform: skewY(3.5deg);
   -ms-transform: skewY(3.5deg);
@@ -312,7 +317,7 @@ section.portfolio::before {
   top: -56px;
   width: 100%;
   height: 170px;
-  background: #cc8f90;
+  background-color: #cc8f90;
   -webkit-transform: skewY(3.5deg);
   -moz-transform: skewY(3.5deg);
   -ms-transform: skewY(3.5deg);
@@ -334,7 +339,7 @@ section.testimonials::before {
   top: -56px;
   width: 100%;
   height: 170px;
-  background: #bab0ae;
+  background-color: #bab0ae;
   -webkit-transform: skewY(3.5deg);
   -moz-transform: skewY(3.5deg);
   -ms-transform: skewY(3.5deg);
@@ -355,7 +360,7 @@ section.contacts::before {
   top: -56px;
   width: 100%;
   height: 170px;
-  background: #9c9ca2;
+  background-color: #9c9ca2;
   -webkit-transform: skewY(3.5deg);
   -moz-transform: skewY(3.5deg);
   -ms-transform: skewY(3.5deg);
@@ -371,7 +376,7 @@ section.contacts {
 }
 
 section.footer::before {
-  background: #232323;
+  background-color: #232323;
   content: '';
   position: absolute;
   left: 0;
@@ -386,7 +391,7 @@ section.footer::before {
 }
 
 section.footer {
-  background: #232323;
+  background-color: #232323;
   min-height: 170px;
   height: auto;
   padding: 70px 30px 50px 50px;
@@ -402,8 +407,12 @@ section.footer {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
   padding-left: 1px;
-  background: #393939;
+  background-color: #393939;
   margin: 0% auto 0px auto;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -414,8 +423,10 @@ section.footer {
 .top-section {
   width: 100%;
   height: 100px;
-  background: #232323;
+  background-color: #232323;
   border-radius: 3px 3px 0px 0px;
+  -webkit-border-radius: 3px 3px 0px 0px; 
+  -moz-border-radius: 3px 3px 0px 0px; 
   position: relative;
   top: 5px;
   left: 0px;
@@ -425,7 +436,7 @@ section.footer {
 }
 
 #furElise, #hedwigsTheme {
-  background: #35363B;
+  background-color: #35363B;
   color: #eaeaea;
   width: 25px;
   height: 25px;
@@ -437,7 +448,7 @@ section.footer {
 }
 
 #furElise:hover, #hedwigsTheme:hover {
-  background: #565961;
+  background-color: #565961;
 }
 
 .play-text {
@@ -452,6 +463,10 @@ section.footer {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
 }
 
 .songs {
@@ -473,7 +488,7 @@ section.footer {
   width: 95px;
   height: 280px;
   margin-right: 4px;
-  background: #dcdcdc;
+  background-color: #dcdcdc;
   border-radius: 0px 0px 3px 3px;
   -webkit-border-radius: 0px 0px 3px 3px;
   -moz-border-radius: 0px 0px 3px 3px;
@@ -497,11 +512,11 @@ section.footer {
   top: 0;
   left: 0;
   z-index: 200;
-  background: #fafafa;
+  background-color: #fafafa;
 }
 
 .white-key:hover::after {
-  background: #e0e0e0;
+  background-color: #e0e0e0;
 }
 
 .last-key {
@@ -535,7 +550,7 @@ section.footer {
   border-radius: 0px 0px 3px 3px;
   -webkit-border-radius: 0px 0px 3px 3px;
   -moz-border-radius: 0px 0px 3px 3px;
-  background: #343434;
+  background-color: #343434;
   border: 3px solid #46484d;
   position: relative;
   top: -2px;
@@ -552,7 +567,7 @@ section.footer {
   border-radius: 0px 0px 3px 3px;
   -webkit-border-radius: 0px 0px 3px 3px;
   -moz-border-radius: 0px 0px 3px 3px;
-  background: #1e1e1e;
+  background-color: #1e1e1e;
   z-index: 500;
   position: absolute;
   top: 0px;
@@ -560,11 +575,11 @@ section.footer {
 }
 
 .black-key:hover::before {
-  background: #2f3233;
+  background-color: #2f3233;
 }
 
 .black-key:hover::after {
-  background: #a8a8a8;
+  background-color: #a8a8a8;
 }
 
 .black-key::after {
@@ -573,7 +588,7 @@ section.footer {
   height: 137px;
   float: left;
   margin-top: 5px;
-  background: #a5a5a5;
+  background-color: #a5a5a5;
   z-index: 500;
   position: absolute;
   top: 10px;
@@ -624,38 +639,6 @@ section.footer {
   top: 5px;
 }
 
-/*
-.portfolio-content {
-  .portfolio-header {
-    content: "";
-    display: block;
-    height: 80vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    .portfolio-title-container {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      //border: 1px solid #eee;
-      width: 522px;
-      padding: 10px;
-      margin: auto;
-      .portfolio-title {
-        margin: auto;
-        padding: 30px;
-        font-size: 30px;
-        width: 500px;
-        // background-color: rgba(255, 255, 255, 0.5);
-        background-color: #858a9b;
-        opacity: 1;
-        color: #fff;
-      }
-    }
-  }
-
-}
-
-*/
 .product-img {
   width: 100%;
   overflow: hidden;
@@ -667,9 +650,10 @@ section.footer {
   margin: 0px 5px 25px 0px;
   padding: 0px 0px 0px 0px;
   border: 3px solid #eee;
-  border-radius: 0px;
-  background: #fafafa;
+  background-color: #fafafa;
   border-radius: 5px;
+  -webkit-border-radius: 5px; 
+  -moz-border-radius: 5px; 
 }
 .project-container .project-header {
   padding: 0px;
@@ -687,6 +671,8 @@ section.footer {
   height: auto;
   background-color: #fafafa;
   border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px; 
+  -moz-border-radius: 5px 5px 0px 0px; 
 }
 .project-container .project-header .p-tag {
   line-height: 150%;
@@ -697,6 +683,8 @@ section.footer {
   font-size: 13px;
   color: #777;
   border-radius: 3px;
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
 }
 .project-container .project-content {
   display: inline-block;
@@ -713,13 +701,16 @@ section.footer {
   min-height: 150px;
   display: block;
   transition: all 1s ease-in-out;
-  -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1, 1, 1);
+  -moz-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  -o-transform: scale3d(1, 1, 1);
 }
 .project-container .project-content .hover-1 {
   width: 100%;
   height: 0px;
-  background: #ccc;
+  background-color: #ccc;
   position: absolute;
   transition: all 1s ease-in-out;
   top: 0;
@@ -733,6 +724,10 @@ section.footer {
   top: 120%;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
   z-index: 105;
   transition: all 1s ease-in-out;
   padding: 7px 9px;
@@ -742,6 +737,8 @@ section.footer {
   height: 70px;
   font-size: 39px;
   border-radius: 3px;
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
   color: #ccc;
   text-align: center;
   margin: auto;
@@ -761,8 +758,11 @@ section.footer {
 .project-container .project-content:hover img {
   display: block;
   transition: all 1s;
-  -webkit-transform: scale3d(1.1, 1.1, 1);
   transform: scale3d(1.1, 1.1, 1);
+  -webkit-transform: scale3d(1.1, 1.1, 1);
+  -moz-transform: scale3d(1.1, 1.1, 1);
+  -ms-transform: scale3d(1.1, 1.1, 1);
+  -o-transform: scale3d(1.1, 1.1, 1);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -788,11 +788,15 @@ section.footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 .project-container .project-footer {
   padding: 10px;
   color: #aaa;
-  background: #232323;
+  background-color: #232323;
   border-top: 3px solid #999;
   text-transform: uppercase;
   font-size: 9px;
@@ -802,6 +806,8 @@ section.footer {
   position: relative;
   z-index: 100;
   border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px 0px 5px 5px; 
+  -moz-border-radius: 0px 0px 5px 5px; 
 }
 .project-container .project-footer .tag-icon {
   color: #d77e7e;
@@ -813,18 +819,20 @@ section.footer {
 }
 
 .p-pink {
-  background: #fff;
+  background-color: #fff;
   border-radius: 3px;
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
   border: 1px solid #EEEEEE;
 }
 
 .p-blue {
-  background: #fff;
+  background-color: #fff;
   border: 1px solid #90C3D4;
 }
 
 .p-grey {
-  background: #fff;
+  background-color: #fff;
   border: 1px solid #EEE;
 }
 
@@ -872,6 +880,8 @@ section.footer {
   -webkit-box-shadow: none;
   box-shadow: none;
   border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px; 
+  -moz-border-radius: 10px 10px 0px 0px; 
 }
 .portfolio-modal .project-modal-container .project-header {
   padding: 0px;
@@ -883,6 +893,8 @@ section.footer {
   position: relative;
   z-index: 100;
   border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px; 
+  -moz-border-radius: 10px 10px 0px 0px; 
 }
 .portfolio-modal .project-modal-container .project-header .project-tags {
   width: 100%;
@@ -890,6 +902,8 @@ section.footer {
   height: 75px;
   background-color: #fafafa;
   border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px; 
+  -moz-border-radius: 10px 10px 0px 0px; 
 }
 .portfolio-modal .project-modal-container .project-header .p-tag {
   line-height: 190%;
@@ -900,6 +914,8 @@ section.footer {
   font-size: 23px;
   color: #999;
   border-radius: 3px;
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
 }
 .portfolio-modal .project-modal-container .project-header img {
   margin-bottom: 0px;
@@ -944,6 +960,8 @@ section.footer {
   height: 50px;
   border: 2px solid #000;
   border-radius: 100%;
+  -webkit-border-radius: 100%; 
+  -moz-border-radius: 100%; 
   text-align: center;
   font-size: 20px;
   line-height: 45px;
@@ -989,13 +1007,19 @@ section.footer {
   bottom: -37px;
   right: 10px;
   transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
   color: #777;
   height: 50px;
   width: 50px;
-  background: #fff;
+  background-color: #fff;
   padding: 5px 0px 0px 6px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  -webkit-border-radius: 5px; 
+  -moz-border-radius: 5px; 
   text-align: center;
   font-size: 37px;
 }
@@ -1066,13 +1090,15 @@ button.close.portfolio-close-btn {
   font-size: 12px;
   text-transform: none;
   color: #aaa;
+  letter-spacing: 3px;
+  line-height: 15px;
 }
 
 .p-tag-left {
   margin-right: 5px;
   margin-bottom: 5px;
   padding: 6px 7px;
-  background: #fff;
+  background-color: #fff;
   height: auto;
   font-family: Karla;
   font-weight: 400;
@@ -1127,7 +1153,7 @@ a .contact-btn {
 }
 a .contact-btn:hover {
   border-left: 10px solid #d77e7e;
-  background: #f8f8f8;
+  background-color: #f8f8f8;
 }
 
 .contacts-container {
@@ -1136,22 +1162,28 @@ a .contact-btn:hover {
   top: 33%;
   left: 59%;
   transform: translateX(-59%) translateY(-33%);
+  -webkit-transform: translateX(-59%) translateY(-33%);
+  -moz-transform: translateX(-59%) translateY(-33%);
+  -ms-transform: translateX(-59%) translateY(-33%);
+  -o-transform: translateX(-59%) translateY(-33%);
 }
 .contacts-container .contact-info-container {
   float: left;
   position: relative;
   top: 50px;
   left: -143px;
-  background: #fafafa;
+  background-color: #fafafa;
   margin-bottom: -100%;
 }
 .contacts-container .contact-form {
   width: 800px;
   font-size: 12px;
-  background: #232323;
+  background-color: #232323;
   height: auto;
   padding: 50px;
   border-radius: 10px;
+  -webkit-border-radius: 10px; 
+  -moz-border-radius: 10px; 
   border: 3px solid #777;
   margin-left: auto;
   margin-right: auto;
@@ -1164,6 +1196,8 @@ a .contact-btn:hover {
   font-family: 'Karla', sans-serif;
   letter-spacing: 1px;
   border-radius: 4px;
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px; 
   border: 2px solid #ccc;
 }
 .contacts-container .contact-form input:focus {
@@ -1179,6 +1213,8 @@ a .contact-btn:hover {
   letter-spacing: 1px;
   font-size: 12px;
   border-radius: 4px;
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px; 
   border: 2px solid #ccc;
 }
 .contacts-container .contact-form textarea:focus {
@@ -1195,6 +1231,8 @@ a .contact-btn:hover {
   letter-spacing: 2px;
   font-size: 15px;
   border-radius: 4px;
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px; 
   border: 0;
 }
 .contacts-container .contact-form button.submit:focus {
@@ -1220,7 +1258,7 @@ a .contact-btn:hover {
  *************************************/
 @keyframes gradient-text {
   0% {
-    background: #d1a1ac;
+    background-color: #d1a1ac;
     /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(45deg, #d1a1ac, #af7c88 27%, #d1b1b9 53%, #e5d0d6 77%, #edc2ce);
     /* For Safari 5.1 to 6.0 */
@@ -1234,7 +1272,7 @@ a .contact-btn:hover {
     -webkit-text-fill-color: transparent;
   }
   25% {
-    background: #edc2ce;
+    background-color: #edc2ce;
     /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(45deg, #edc2ce, #d1a1ac 27%, #af7c88 53%, #d1b1b9 77%, #e5d0d6);
     /* For Safari 5.1 to 6.0 */
@@ -1248,7 +1286,7 @@ a .contact-btn:hover {
     -webkit-text-fill-color: transparent;
   }
   50% {
-    background: #e5d0d6;
+    background-color: #e5d0d6;
     /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(45deg, #e5d0d6, #edc2ce 27%, #d1a1ac 53%, #af7c88 77%, #d1b1b9);
     /* For Safari 5.1 to 6.0 */
@@ -1262,7 +1300,7 @@ a .contact-btn:hover {
     -webkit-text-fill-color: transparent;
   }
   75% {
-    background: #d1b1b9;
+    background-color: #d1b1b9;
     /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(45deg, #d1b1b9, #e5d0d6 27%, #edc2ce 53%, #d1a1ac 77%, #af7c88);
     /* For Safari 5.1 to 6.0 */
@@ -1276,7 +1314,7 @@ a .contact-btn:hover {
     -webkit-text-fill-color: transparent;
   }
   100% {
-    background: #af7c88;
+    background-color: #af7c88;
     /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(45deg, #af7c88, #d1b1b9 27%, #e5d0d6 53%, #edc2ce 77%, #d1a1ac);
     /* For Safari 5.1 to 6.0 */
