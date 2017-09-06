@@ -1,97 +1,99 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
 <html lang="en">
+
 <head>
+
   <meta charset="utf-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="" name="description">
-  <meta content="" name="author">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
   <title>Jaime J.E. Yoon</title>
-  <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-  <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Custom CSS -->
-  <link href="cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css"
-  rel="stylesheet"><!-- Custom CSS -->
-  <link href="css/furelise.css" rel="stylesheet"><!-- Custom Fonts -->
+  
+    
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type=
   "text/css">
   <link href="css/animate.css" rel="stylesheet">
-  <link href="slick/slick.css" rel="stylesheet" type="text/css">
-  <link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/scss/_functions.scss" rel="stylesheet" type=
+  "text/css">
+  <link href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/scss/_variables.scss" rel="stylesheet" type=
+  "text/css">
+  <link href="https://cdn.rawgit.com/eduardoboucas/include-media/master/dist/_include-media.scss" rel="stylesheet" type=
+  "text/css">
+  <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet" type=
+  "text/css">
+  
+  
+    <link rel="stylesheet" type="text/css" href="css/cestlavie.css">
+    
+    
+
 </head>
+
 <body>
-  <div id="loader-wrapper">
-    <div id="loader">
-      <div class="stick"></div>
-      <div class="stick"></div>
-      <div class="stick"></div>
-      <div class="stick"></div>
-      <div class="stick"></div>
-      <div class="stick"></div>
-      <div class="stick"></div>
-      <div class="stick"></div>
-      <div class="stick"></div>
-      <div class="stick"></div>
-      <div class="stick"></div>
-      <div class="stick"></div>
-      <div class="stick"></div>
-      <div class="stick"></div>
-      <div class="stick"></div>
-      <div class="stick"></div>
+
+  <!-- Navigation -->
+  <nav class="hidden-md-up navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <a class="navbar-brand" href="#">Jaime J.E. Yoon</a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#anchor-about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#anchor-about">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#anchor-contacts">Contact</a>
+        </li>
     </div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-  </div>
-  <header id="header">
-    <div class="container">
-      <div class="main-name-container">
-        <div class="main-name">
-          Jaime J.E. Yoon
-        </div>
+  </nav>
+
+
+  <h1 id="wrapper" class="toggleds">
+
+    <!-- Sidebar -->
+    <div class="hidden-sm-down" id="sidebar-wrapper">
+
+      <div class="sidebar-banner"></div>
+      
+      <div class="sidebar-menu">
+      <div id="sidebar-title-container">
+        <div id="sidebar-title"><span class="title">Jaime J.E. Yoon</span></div>
+        <div id="sidebar-subtitle">c'est la vie</div>
       </div>
-      <nav id="nav">
-        <div class="opener-holder">
-          <div class="nav-opener">
-            <span></span>
-          </div>
+
+      <div id="sidebar-links-container">
+        <a href="#anchor-main"><div class="sidebar-link" id="sidebar-main-btn"><span class="lnr lnr-home"></span></div></a>
+        <a href="#anchor-about"><div class="sidebar-link" id="sidebar-about-btn"><span class="lnr lnr-user"></span></div></a>
+        
+        <a href="#anchor-portfolio"><div class="sidebar-link" id="sidebar-portfolio-btn"><span class="lnr lnr-laptop"></span></div></a>
+        <a href="#anchor-testimonials"><div class="sidebar-link" id="sidebar-testimonials-btn"><span class="lnr lnr-bubble"></span></div></a>
+        <a href="#anchor-contacts"><div class="sidebar-link" id="sidebar-contacts-btn"><span class="lnr lnr-phone"></span></div></a>
+      </div>
         </div>
-        <div class="nav-drop">
-          <ul>
-            <li class="active visible-sm visible-xs"></li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-          <div class="drop-holder visible-sm visible-xs visible-md visible-lg visible-xl">
-            <span>Follow Me</span>
-            <ul class="social-networks">
-              <li>
-                <a class="fa fa-github" href="https://github.com/jungeunyoon/"></a>
-              </li>
-              <li>
-                <a class="fa fa-codepen" href="codepen.io/inthejungle/"></a>
-              </li>
-              <li>
-                <a class="fa fa-instagram" href="instagram.com/_in_the_jungle/"></a>
-              </li>
-                            <li>
-                <a class="fa fa-tumblr" href="http://in-da-jungle.tumblr.com/"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
     </div>
-  </header>
-  <div id="content">
-    <section class="main" id="main">
-      <div class="container">
-        <div class="row top30">
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <section class="container-fluid main" id="anchor-main">     
+        <div class="row">
+        
+                    <div id="testimonials-alert" class="alert error-message">Testimonials Coming Soon.</div>
+                    
+                    
           <audio id="mid-dAudio"><source src=
           "http://www.freesound.org/data/previews/117/117713_646701-lq.mp3"
           type="audio/mpeg"></audio> <audio id="mid-dsharpAudio"><source src=
@@ -128,27 +130,26 @@
           <div class="piano">
             <div class="top-section">
               <div class="play-text">
-                play me or click buttons
+                play me<span class="hidden-sm-down"> or click buttons</span>
               </div>
               <div class="songs">
                 <button id="furElise" onclick="playFurElise()"></button>
-                <button id="hedwigsTheme" onclick=
-                "playHedwigsTheme()"></button>
+                <button id="hedwigsTheme" onclick="playHedwigsTheme()"></button>
               </div>
             </div>
             <div class="white-section">
-              <div class="white-key" id="mid-d"></div>
-              <div class="white-key" id="mid-e"></div>
+              <div class="white-key hidden-xs-down" id="mid-d"></div>
+              <div class="white-key hidden-xs-down" id="mid-e"></div>
               <div class="white-key" id="mid-f"></div>
               <div class="white-key" id="mid-g"></div>
               <div class="white-key" id="mid-a"></div>
-              <div class="white-key" id="mid-b"></div>
-              <div class="white-key" id="high-c"></div>
-              <div class="white-key" id="high-d"></div>
-              <div class="white-key" id="high-e"></div>
+              <div class="white-key last-key-sm-down" id="mid-b"></div>
+              <div class="white-key hidden-sm-down" id="high-c"></div>
+              <div class="white-key hidden-sm-down" id="high-d"></div>
+              <div class="white-key hidden-sm-down last-key" id="high-e"></div>
             </div>
             <div class="black-section">
-              <div class="black-key-border" id="b1">
+              <div class="black-key-border hidden-xs-down" id="b1">
                 <div class="black-key" id="mid-d-sharp"></div>
               </div>
               <div class="black-key-border" id="b2">
@@ -160,944 +161,1232 @@
               <div class="black-key-border" id="b4">
                 <div class="black-key" id="mid-a-sharp"></div>
               </div>
-              <div class="black-key-border" id="b5">
+              <div class="black-key-border hidden-sm-down" id="b5">
                 <div class="black-key" id="high-c-sharp"></div>
               </div>
-              <div class="black-key-border" id="b6">
+              <div class="black-key-border hidden-sm-down" id="b6">
                 <div class="black-key" id="high-d-sharp"></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="about" id="about">
-      <div class="container">
-      
-      <DIV CLASS="section-title">A PROGRAMMER WITH AN EYE FOR DESIGN</DIV>
-      
-      <div class="wow slideInRight"><img alt="about-me" class=
-              "img-responsive center about-me-img" src=
-            "img/img-01.png"></div>
-            
-      <!--
-        <div class="row top10">
-          <div class="col-sm-6 col-xs-12">
-          
-            <div class="about-typewriter"></div>
-            <div class="about-text">
-            
-        
-            While I can't deny that I have an eye for design, I am predominately a programmer. I love the creativity and ingenuity required for the solving problem aspect to programming and the natural high that immediately follows after solving a particularly difficult one.</br></br>
 
-When I'm not coding or experimenting with a new tool, I can be found at a cozy cafe reading newspapers front to back, sacrificing myself to find the best pecan pie in town in everyone's place, marathon-watching the "Harry Potter" and "Lord of The Rings" series, going for a run, randomly bellowing out Disney tunes and trying to fulfill my life's goal of helping others.
-</div>
-            
-          </div>
-          <div class="col-sm-6 col-xs-12">
-            <div class="wow slideInRight"><img alt="" height="567" src=
-            "img/img-01.png" width="800"></div>
-          </div>
+    </div>
+
+
+    <section class="about container-fluid" id="anchor-about">
+      <div class="row">
+        <div class="col-lg-12">
+<img alt="" class="img-fluid center about-me-img" src="http://www.jaimeyoon.com/img/about/console.png">
+
         </div>
-        -->
-        
-        
       </div>
     </section>
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-      <DIV CLASS="section-title">COMMITTED TO ALWAYS LEARNING</DIV>
-        <div class="row top0 right5">
-          <!-- ***** WEATHERVAIN ***** -->
-          <div class="col-md-4 col-sm-4 project-container">
-            <a class="portfolio-link" data-toggle="modal" href=
-            "#portfolioModal-WV">
-            <div class="p-border">
-              <div class="project-box"><img alt="" class=
-              "img-responsive project-img" src="img/portfolio/wv1.png"></div>
-              <!-- box -->
-              <div class="project-tags">
-                <div class="p-tag p-pink">
-                  ios application
-                </div>
-              </div><!-- tags -->
-            </div></a>
-          </div><!-- ***** USED PC'S ***** -->
-          <div class="col-md-4 col-sm-4 project-container">
-            <a class="portfolio-link" data-toggle="modal" href=
-            "#portfolioModal-UP">
-            <div class="p-border">
-              <div class="project-box"><img alt="" class=
-              "img-responsive project-img" src="img/portfolio/usedpcs.png"></div>
-              <!-- box -->
-              <div class="project-tags">
-                <div class="p-tag p-pink">
-                  web dev
-                </div>
-                <div class="p-tag p-grey">
-                  scripting
-                </div>
-              </div><!-- tags -->
-            </div></a>
-          </div><!-- ***** PICAFEED ***** -->
-          <div class="col-md-4 col-sm-4 project-container">
-          <a class="portfolio-link" data-toggle="modal" href=
-            "#portfolioModal-pf">
-            <div class="p-border">
-              <div class="project-box"><img alt="" class=
-              "img-responsive project-img" src="img/portfolio/picafeed.png"></div>
-              <!-- box -->
-              <div class="project-tags">
-                <div class="p-tag p-blue">
-                  startup
-                </div>
-                <div class="p-tag p-grey">
-                  co-founder
-                </div>
-              </div><!-- tags -->
-            </div></a>
-          </div>
-        </div><!-- row-->
-        <div class="row top0 right5">
-          <!-- ***** HAT FANCY ***** -->
-          <div class="col-md-4 col-sm-4 project-container">
-            <a class="portfolio-link" data-toggle="modal" href=
-            "#portfolioModal-HF">
-            <div class="p-border">
-              <div class="project-box"><img alt="" class=
-              "img-responsive project-img" src="img/portfolio/hf1.png"></div>
-              <!-- box -->
-              <div class="project-tags">
-                <div class="p-tag p-grey">
-                  web application
-                </div>
-              </div><!-- tags -->
-            </div></a>
-          </div><!-- ***** PORTFOLIO ***** -->
-          <div class="col-md-4 col-sm-4 project-container">
-          <a class="portfolio-link" data-toggle="modal" href=
-            "#portfolioModal-ptf">
-            <div class="p-border">
-              <div class="project-box"><img alt="" class=
-              "img-responsive project-img" src="img/portfolio/portfolio5.png"></div>
-              <!-- box -->
-              <div class="project-tags">
-                <div class="p-tag p-blue">
-                  web dev
-                </div>
-              </div><!-- tags -->
-            </div></a>
-          </div><!-- ***** GRAPHICS ***** -->
-          <div class="col-md-4 col-sm-4 project-container">
-          <a class="portfolio-link" data-toggle="modal" href=
-            "#portfolioModal-dsn">
-            <div class="p-border">
-              <div class="project-box"><img alt="" class=
-              "img-responsive project-img" src="img/portfolio/graphics1.png"></div>
-              <!-- box -->
-              <div class="project-tags">
-                <div class="p-tag p-pink">
-                  design
-                </div>
-              </div><!-- tags -->
-            </div>
-            </a>
-          </div>
-        </div><!-- row-->
-        <div class="row top0 right5">
-          <!-- ***** FORUM ***** -->
-          <div class="col-md-4 col-sm-4 project-container">
-          <a class="portfolio-link" data-toggle="modal" href=
-            "#portfolioModal-forum">
-            <div class="p-border">
-              <div class="project-box"><img alt="" class=
-              "img-responsive project-img" src="img/portfolio/forums.png"></div>
-              <!-- box -->
-              <div class="project-tags">
-                <div class="p-tag p-pink">
-                  web dev
-                </div>
-              </div><!-- tags -->
-            </div></a>
-          </div><!-- ***** WEATHERIT ***** -->
-          <div class="col-md-4 col-sm-4 project-container">
-            <a class="portfolio-link" data-toggle="modal" href=
-            "#portfolioModal-wi">
-            <div class="p-border">
-              <div class="project-box"><img alt="" class=
-              "img-responsive project-img" src="img/portfolio/wi.png"></div>
-              <!-- box -->
-              <div class="project-tags">
-                <div class="p-tag p-blue">
-                  ios application
-                </div>
-              </div><!-- tags -->
-            </div></a>
-          </div><!-- ***** LOADERS ***** -->
-          <div class="col-md-4 col-sm-4 project-container">
-          <a class="portfolio-link" data-toggle="modal" href=
-            "#portfolioModal-css">
-            <div class="p-border">
-              <div class="project-box"><img alt="" class=
-              "img-responsive project-img" src="img/portfolio/css.png"></div>
-              <!-- box -->
-              <div class="project-tags">
-                <div class="p-tag p-pink">
-                  experimentation
-                </div>
-              </div><!-- tags -->
-            </div></a>
-          </div>
-        </div><!-- row-->
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <div class="container">
+
+    <section class="portfolio container-fluid" id="anchor-portfolio">
+
+          <h2 class="background section-title"><span>Le Dossier</span></h2>
       
-<div class="arrow-placeholder">
-			<div class="arrow"></div>
-	<div class="arrow-down-animated">
+      <div class="row">
+        <!-- Start: LD -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+<div class="project-container">
+	<div class="project-header">
+	  <div class="project-tags">
+		<div class="p-tag p-pink">
+		  Living Direct Inc.
+		</div>
+	  </div>
+	</div>
+	<a class="modal-btn" data-toggle="modal" href="#project-modal-ld">
+	  <div class="project-content">
+		<div class="hover-1"></div>
+		<div class="hover-2">
+		  <span class="lnr lnr-enter"></span>
+		</div>
+
+
+		<img alt="" class="img-fluid project-img" src="http://www.jaimeyoon.com/img/portfolio/ld.png"></div>
+	</a>
+	<div class="project-footer">
+	  <span class="tag-icon lnr lnr-cart"></span>
+	  <span class="tag">E-Commerce</span>
+	  <span class="tag-spacer">l</span>
+	  <span class="tag-icon lnr lnr-cloud"></span>
+	  <span class="tag">Demandware</span>
 	</div>
 </div>
-      
-        <svg height="570" viewbox="0 0 500 570" width="500" xmlns=
-        "http://www.w3.org/2000/svg">
-        <g fill="none" stroke="#bdb6b0" stroke-width="5">
-          <path class="st0" d="M294.5,129.7v79.5"></path>
-          <path class="st0" d=
-          "M256.9,236.3v-11.2l4-4.3h67.9l3.4,4.3v11.2"></path>
-          <path class="st0" d="M270.3,218.8v-7.7h48.5v6.7v1"></path>
-          <path class="st0" d="M265.9,230.2l58,0.1"></path>
-          <path class="st0" d="M247.2,250l0.1-11.3h94.9l-0.1,11.9"></path>
-          <path class="st0" d="M264.1,245.1v5.5"></path>
-          <path class="st0" d="M279.3,245.1v5.5"></path>
-          <path class="st0" d="M294.5,245.1v5.5"></path>
-          <path class="st0" d="M309.7,245.1v5.5"></path>
-          <path class="st0" d="M325.1,245.1v5.5"></path>
-          <path class="st0" d=
-          "M241.4,288.9l0.2-36.7l105.6,0.5l-0.2,36.7"></path>
-          <path class="st0" d="M252.2,271.3l0.1,17"></path>
-          <path class="st0" d="M264.9,271.4l0.1,17"></path>
-          <path class="st0" d="M325.2,271.3l0.1,17"></path>
-          <path class="st0" d="M337.7,271.4l0.1,17"></path>
-          <path class="st0" d="M234.5,341.1l0.2-50.5h36.2l-0.2,50.5"></path>
-          <path class="st0" d="M318.5,341.1l0.2-50.5h37.1l-0.2,50.5"></path>
-          <path class="st0" d="M243.5,298v43.1"></path>
-          <path class="st0" d="M252.5,298v43.1"></path>
-          <path class="st0" d="M261,298v43.1"></path>
-          <path class="st0" d="M328.5,298v43.1"></path>
-          <path class="st0" d="M337.5,298v43.1"></path>
-          <path class="st0" d="M346,298v43.1"></path>
-          <path class="st0" d="M284.8,268.8v148.1"></path>
-          <path class="st0" d="M294.3,268.8v136.5"></path>
-          <path class="st0" d="M304.3,268.8v167.8"></path>
-          <path class="st0" d=
-          "M229.5,419.7l0.3-76.8c0,0,45.1-0.2,45.1-0.2l0.3,62"></path>
-          <path class="st0" d=
-          "M313.9,466l0.2-123.2c0,0,45.5,0,45.5,0l0.1,49.1"></path>
-          <path class="st0" d="M240.2,355.4l0.1,33.9"></path>
-          <path class="st0" d="M252.2,355.4l0.2,48.1"></path>
-          <path class="st0" d="M264.5,355.4l0.3,77.9"></path>
-          <path class="st0" d="M324.5,355.1l0.2,47.9"></path>
-          <path class="st0" d="M336.5,355.1l0.2,66.3"></path>
-          <path class="st0" d="M349.2,355.1l0.1,24"></path>
-        </g></svg>
+        </div>
         
-        <div class="relocation-info" id="hideaway1" style="display:none;">
-          (210) 730-4989</br>
-          Kakaotalk: JEY10
+                <!-- Start: UsedPCs -->
+        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 col-xl-4">
+<div class="project-container">
+	<div class="project-header">
+	  <div class="project-tags">
+		<div class="p-tag p-pink">
+		  Used-PCs.com
+		</div>
+	  </div>
+	</div>
+	<a class="modal-btn" data-toggle="modal" href="#project-modal-upc">
+	  <div class="project-content">
+		<div class="hover-1"></div>
+		<div class="hover-2">
+		  <span class="lnr lnr-enter"></span>
+		</div>
+
+
+		<img alt="" class="img-fluid project-img" src="http://www.jaimeyoon.com/img/portfolio/usedpcs.png"></div>
+	</a>
+	<div class="project-footer">
+	  <span class="tag-icon lnr lnr-cart"></span>
+	  <span class="tag">E-Commerce</span>
+	  <span class="tag-spacer">l</span>
+	  <span class="tag-icon lnr lnr-database"></span>
+	  <span class="tag">SQL</span>
+	</div>
+</div>
+        </div>
+        
+        <!-- Start: WeatherVain -->        
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+<div class="project-container">
+	<div class="project-header">
+	  <div class="project-tags">
+		<div class="p-tag p-pink">
+		  WeatherVain
+		</div>
+	  </div>
+	</div>
+	<a class="modal-btn" data-toggle="modal" href="#project-modal-wv">
+	  <div class="project-content">
+		<div class="hover-1"></div>
+		<div class="hover-2">
+		  <span class="lnr lnr-enter"></span>
+		</div>
+
+
+		<img alt="" class="img-fluid project-img" src="http://www.jaimeyoon.com/img/portfolio/wv1.png"></div>
+	</a>
+	<div class="project-footer">
+	  <span class="tag-icon lnr lnr-smartphone"></span>
+	  <span class="tag">iOS Application</span>
+	  <span class="tag-spacer">l</span>
+	  <span class="tag-icon lnr lnr-star"></span>
+	  <span class="tag">Award</span>
+	</div>
+</div>
+        </div>
+        
+<!-- Start: Themes -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+<div class="project-container">
+	<div class="project-header">
+	  <div class="project-tags">
+		<div class="p-tag p-pink">
+		 New Portfolio
+		</div>
+	  </div>
+	</div>
+	<a class="modal-btn" data-toggle="modal" href="#project-modal-portfolio">
+	  <div class="project-content">
+		<div class="hover-1"></div>
+		<div class="hover-2">
+		  <span class="lnr lnr-enter"></span>
+		</div>
+
+
+		<img alt="" class="img-fluid project-img" src="http://www.jaimeyoon.com/img/portfolio/portfolio.png"></div>
+	</a>
+	<div class="project-footer">
+	  <span class="tag-icon lnr lnr-laptop-phone"></span>
+	  <span class="tag">web</span>
+	</div>
+</div>
+        </div>
+        
+        <!-- Start: Hat Fancy -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+<div class="project-container">
+	<div class="project-header">
+	  <div class="project-tags">
+		<div class="p-tag p-pink">
+		  Hat Fancy
+		</div>
+	  </div>
+	</div>
+	<a class="modal-btn" data-toggle="modal" href="#project-modal-hf">
+	  <div class="project-content">
+		<div class="hover-1"></div>
+		<div class="hover-2">
+		  <span class="lnr lnr-enter"></span>
+		</div>
+
+
+		<img alt="" class="img-fluid project-img" src="http://www.jaimeyoon.com/img/portfolio/hf1.png"></div>
+	</a>
+	<div class="project-footer">
+	  <span class="tag-icon lnr lnr-laptop-phone"></span>
+	  <span class="tag">web</span>
+	</div>
+</div>
+        </div>
+        
+
+        
+        <!-- Start: CSS Experiments -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+<div class="project-container">
+	<div class="project-header">
+	  <div class="project-tags">
+		<div class="p-tag p-pink">
+		  Experiments
+		</div>
+	  </div>
+	</div>
+	<a class="modal-btn" data-toggle="modal" href="#project-modal-css">
+	  <div class="project-content">
+		<div class="hover-1"></div>
+		<div class="hover-2">
+		  <span class="lnr lnr-enter"></span>
+		</div>
+
+
+		<img alt="" class="img-fluid project-img" src="http://www.jaimeyoon.com/img/portfolio/css.png"></div>
+	</a>
+	<div class="project-footer">
+	  <span class="tag-icon lnr lnr-laptop-phone"></span>
+	  <span class="tag">web</span>
+	  <span class="tag-spacer">l</span>
+	  <span class="tag-icon lnr lnr-highlight"></span>
+	  <span class="tag">css</span>
+	</div>
+</div>
         </div>
         
         
-        <div class="contact-info" id="hideaway" style="display:none;">
-          (210) 730 - 4978<br>
-          jaimeyoon.je@gmail.com</br>
-          
+                <!-- Start: WeatherVain -->        
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+<div class="project-container">
+	<div class="project-header">
+	  <div class="project-tags">
+		<div class="p-tag p-pink">
+		  Portfolio Themes
+		</div>
+	  </div>
+	</div>
+	<a class="modal-btn" data-toggle="modal" href="#project-modal-themes">
+	  <div class="project-content">
+		<div class="hover-1"></div>
+		<div class="hover-2">
+		  <span class="lnr lnr-enter"></span>
+		</div>
+
+
+		<img alt="" class="img-fluid project-img" src="http://www.jaimeyoon.com/img/portfolio/themes.png"></div>
+	</a>
+	<div class="project-footer">
+	  <span class="tag-icon lnr lnr-smartphone"></span>
+	  <span class="tag">web</span>
+	</div>
+</div>
         </div>
+   
+        
+        
+                <!-- Start: WeatherVain -->        
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+<div class="project-container">
+	<div class="project-header">
+	  <div class="project-tags">
+		<div class="p-tag p-pink">
+		  Forum Templates
+		</div>
+	  </div>
+	</div>
+	<a class="modal-btn" data-toggle="modal" href="#project-modal-forum">
+	  <div class="project-content">
+		<div class="hover-1"></div>
+		<div class="hover-2">
+		  <span class="lnr lnr-enter"></span>
+		</div>
+
+
+		<img alt="" class="img-fluid project-img" src="http://www.jaimeyoon.com/img/portfolio/forums.png"></div>
+	</a>
+	<div class="project-footer">
+	  <span class="tag-icon lnr lnr-smartphone"></span>
+	  <span class="tag">web</span>
+	</div>
+</div>
+        </div>
+   
+        
+        
+                <!-- Start: CSS Experiments -->
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+<div class="project-container">
+	<div class="project-header">
+	  <div class="project-tags">
+		<div class="p-tag p-pink">
+		  Design & Branding
+		</div>
+	  </div>
+	</div>
+	<a class="modal-btn" data-toggle="modal" href="#project-modal-design">
+	  <div class="project-content">
+		<div class="hover-1"></div>
+		<div class="hover-2">
+		  <span class="lnr lnr-enter"></span>
+		</div>
+
+
+		<img alt="" class="img-fluid project-img" src="http://www.jaimeyoon.com/img/portfolio/graphics1.png"></div>
+	</a>
+	<div class="project-footer">
+	  <span class="tag-icon lnr lnr-pencil"></span>
+	  <span class="tag">design</span>
+	</div>
+</div>
+        </div>
+        
+        
       </div>
     </section>
 
-  </div>
-  
- 
- 
-   <!-- ****************** WEATHERVAIN ****************** -->
-  <div aria-hidden="true" class="portfolio-modal modal fade" id=
-  "portfolioModal-WV" role="dialog" tabindex="-1">
-    <div class="modal-content background-white">
-      <div class="project-right-buttons-panel">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="project-info-box">
-          <h3>WeatherVain</h3>
-          <p>Developer and designer for an iOS app prototype for a class that combined Computer Science and Journalism majors into teams.</p>
-          <div class="project-tags-modal">
-            <div class="p-tag-left p-blue">
-              iOS
-            </div>
-            <div class="p-tag-left p-grey">
-              Objective-C
-            </div>
-            <div class="p-tag-left p-grey">
-              OpenWeatherAPI
-            </div>
-            <div class="p-tag-left p-grey">
-              Parse
-            </div>
-            <div class="p-tag-left p-grey">
-              design
-            </div>
-            <div class="p-tag-left p-grey">
-              Git
-            </div>
-            <div class="p-tag-left p-grey">
-              Photoshop
-            </div>
-            <div class="p-tag-left p-grey">
-              Illustrator
-            </div>
-            <div class="p-tag-left p-grey">
-              CocoaPods
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="project-details-container background-lightGrey">
-        <div class="row row-portfolio">
-          <div class="col-lg-6 modal-col">
-            <img alt="" class="img-responsive modal-img" src=
-            "img/portfolio/wv3.png">
+
+    <section class="hidden-xs-up testimonials container-fluid" id="anchor-testimonials">
+    </section>
+
+    <section class="contacts container-fluid" id="anchor-contacts">
+
+      <div class="contacts-container">
             
-            <div class="project-blurb background-darkGrey">
-              <h1>"[Jaime] was the driving force behind the app. She has an incredible ability to develop a vision to solve really complex problems, and then to translate that vision into reality. She’s flat-out brilliant, and our team was lucky to have her." </br>
-              </br>- Dr. Mark Coddington</h1>
-            </div>
-          </div>
-          <div class="col-lg-6 modal-col">
-          <div class="project-blurb background-blue">
-            <h1>"Best Overall App" and "Most Original Idea" at the second annual University of Texas at Austin - Apps Demo Day.</h1>
-          </div>
-          <div class=
-                                    "embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item"
-                                        src=
-                                        "http://player.vimeo.com/video/90553836">
-                                        </iframe>
-                                    </div>
-                                    
-          <img alt="" class="img-responsive modal-img" src=
-          "img/portfolio/wv2.png"></div>
-        </div>
-      </div><!-- container -->
-    </div>
-  </div><!-- WEATHERVAIN -->
-  
-   
-  <!-- ****************** USED-PC'S ****************** -->
-  <div aria-hidden="true" class="portfolio-modal modal fade" id=
-  "portfolioModal-UP" role="dialog" tabindex="-1">
-    <div class="modal-content background-white">
-      <div class="project-right-buttons-panel">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="project-info-box">
-          <h3>Used-Pc's.com</h3>
-          <p>Full stack web development for the E-commerce platform as a member
-          of a marketing company, ColoredLion.</p>
-          <div class="project-tags-modal">
-            <div class="p-tag-left p-blue">
-              SQL scripting
-            </div>
-            <div class="p-tag-left p-grey">
-              Design
-            </div>
-            <div class="p-tag-left p-grey">
-              html/CSS
-            </div>
-            <div class="p-tag-left p-grey">
-              javascript
-            </div>
-            <div class="p-tag-left p-grey">
-              market research
-            </div>
-            <div class="p-tag-left p-grey">
-              PHP
-            </div>
-            <div class="p-tag-left p-grey">
-              Bootstrap
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="project-details-container background-lightGrey">
-        <div class="row row-portfolio">
-          <div class="col-lg-6 modal-col">
-            <img alt="" class="img-responsive modal-img" src=
-            "img/portfolio/usedpcs5.png">
-            <div class="project-blurb background-black">
-              <h1>With respect to market research, created custom add to cart box and product pages, which includes a secondary navigation bar and technical specifications section.</h1>
-            </div>
-            <img alt="" class="img-responsive modal-img" src=
-          "img/portfolio/usedpcs7.png">
-          </div>
-          <div class="col-lg-6 modal-col"><img alt="" class=
-          "img-responsive modal-img" src="img/portfolio/usedpcs3.png">
-          <div class="project-blurb background-electricBlue">
-            <h1>Suggested and wrote MySQL scripts to handle the inventory,
-            reducing manual upload times from 13 hours to 15 minutes.</h1>
-          </div>
-          </div>
-        </div>
-      </div><!-- container -->
-    </div>
-  </div><!-- USED-PC'S -->
-  
-
-
-  <!-- ****************** PICAFEED ****************** -->
-  <div aria-hidden="true" class="portfolio-modal modal fade" id=
-  "portfolioModal-pf" role="dialog" tabindex="-1">
-    <div class="modal-content background-white">
-      <div class="project-right-buttons-panel">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="project-info-box">
-          <h3>Picafeed</h3>
-          <p>Co-founder and lead developer of the startup. Product is currently in stealth mode.</p>
-          <div class="project-tags-modal">
-            <div class="p-tag-left p-blue">
-              startup
-            </div>
-            <div class="p-tag-left p-grey">
-              iOS
-            </div>
-            <div class="p-tag-left p-grey">
-              android
-            </div>
-            <div class="p-tag-left p-grey">
-              web
-            </div>
-            <div class="p-tag-left p-grey">
-              patents pending
-            </div>
-            <div class="p-tag-left p-grey">
-              design
-            </div>
-            <div class="p-tag-left p-grey">
-marketing
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="project-details-container background-lightGrey">
-        <div class="row row-portfolio">
-          <div class="col-lg-6 modal-col">
-            <img alt="" class="img-responsive modal-img" src=
-            "img/portfolio/picafeed.png">
-            <div class="project-blurb background-brightBlue">
-              <h1>"[Jaime] is very driven in more ways than one. From the moment I met her I knew she would be the best to work with and build a startup with, her keen sense of design and her knowledge in a multitude of fields in computer science and engineering make her a great cofounder. [Jaime] would make a great member to any team and I am glad I have her as my cofounder. Highly recommend her." </br></br>- Co-founder Nisha Pillai</h1>
-            </div>
-          </div>
-          <div class="col-lg-6 modal-col"><img alt="" class=
-          "img-responsive modal-img" src="img/portfolio/picafeed3.png">
-          <img alt="" class="img-responsive modal-img" src=
-          "img/portfolio/picafeed2.png"></div>
-        </div>
-      </div><!-- container -->
-    </div>
-  </div><!-- PICAFEED -->
-  
-
-
-  
-    <!-- ****************** FORUMS ****************** -->
-  <div aria-hidden="true" class="portfolio-modal modal fade" id=
-  "portfolioModal-forum" role="dialog" tabindex="-1">
-    <div class="modal-content background-white">
-      <div class="project-right-buttons-panel">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="project-info-box">
-          <h3>FORUM SKINS</h3>
-          <p>Custom forum skins for jcink and invisionfree sites.</p>
-          <div class="project-tags-modal">
-            <div class="p-tag-left p-blue">
-              html/CSS
-            </div>
-            <div class="p-tag-left p-blue">
-              Javascript
-            </div>
-            <div class="p-tag-left p-blue">
-              jQuery
-            </div>
-            <div class="p-tag-left p-blue">
-              BBCode 
-            </div>
-            <div class="p-tag-left p-blue">
-              doHTML
-            </div>
-            <div class="p-tag-left p-grey">
-              Jcink
-            </div>
-            <div class="p-tag-left p-grey">
-              Invisionfree
-            </div>
-            <div class="p-tag-left p-grey">
-              market research
-            </div>
-            <div class="p-tag-left p-grey">
-              Photoshop
-            </div>
-            <div class="p-tag-left p-grey">
-              Illustrator
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="project-details-container background-lightGrey">
-        <div class="row row-portfolio">
-          <div class="col-lg-6 modal-col">
-            <img alt="" class="img-responsive modal-img" src=
-            "img/portfolio/forums1.png">
-            <div class="project-blurb background-turcoise">
-              <h1>"It takes me generally 15 to 25 hours to make a skin."</br></br>
-              - anonymous</h1>
-            </div>
-            <img alt="" class="img-responsive modal-img" src=
-            "img/portfolio/forums3.png">
-          </div>
-        
-          <div class="col-lg-6 modal-col">
-          <div class="project-blurb background-velvet">
-              <h1>"[Skinning] takes a lot of time and effort and creativity...you are building almost the entire site on your own from scratch.</br></br>
-              - Jcink resource admin</h1>
-          </div>
-          <img alt="" class=
-          "img-responsive modal-img" src="img/portfolio/forums2.png">
+      
+        <div class="contact-form">
+          <div class="contact-info-container hidden-xs-down">
+          <a href="#"><div class="contact-btn"><i class="fa fa-globe" aria-hidden="true"></i></div></a>
           
-        </div>
-        </div>
-      </div><!-- container -->
-    </div>
-  </div><!-- FORUMS -->
-  
-  
-  <!-- ****************** HAT FANCY ****************** -->
-  <div aria-hidden="true" class="portfolio-modal modal fade" id=
-  "portfolioModal-HF" role="dialog" tabindex="-1">
-    <div class="modal-content background-white">
-      <div class="project-right-buttons-panel">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="project-info-box">
-          <h3>Hat Fancy</h3>
-          <p>A web application that acts as a gateway to a database that lists the price data of items that can be purchased/sold amongst Dota 2 players.</p>
-          <div class="project-tags-modal">
-            <div class="p-tag-left p-grey">
-              Bootstrap
-            </div>
-            <div class="p-tag-left p-grey">
-              Design
-            </div>
-            <div class="p-tag-left p-grey">
-              python
-            </div>
-            <div class="p-tag-left p-grey">
-              html/CSS
-            </div>
-            <div class="p-tag-left p-grey">
-              javascript
-            </div>
-            <div class="p-tag-left p-grey">
-              jQuery
-            </div>
-            <div class="p-tag-left p-grey">
-              AngularJS
-            </div>
-            <div class="p-tag-left p-grey">
-              Apiary
-            </div>
-            <div class="p-tag-left p-grey">
-              django
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="project-details-container background-lightGrey">
-        <div class="row row-portfolio">
-          <div class="col-lg-6 modal-col">
-            <img alt="" class="img-responsive modal-img" src=
-            "img/portfolio/hf1.png">
-            <div class="project-blurb background-trueGrey">
-              <h1>Also designed the database, wrote tests and wrote 80% of the extensive technical report.</h1>
-            </div>
-            <img alt="" class="img-responsive modal-img" src=
-          "img/portfolio/hf2.png">
-          </div>
-          <div class="col-lg-6 modal-col">
-          <img alt="" class=
-          "img-responsive modal-img" src="img/portfolio/hf3.png">
-          <div class="project-blurb background-red">
-              <h1>Learned Bootstrap 3 and created a custom responsive front-end within 2 days.</h1>
-            </div>
-          <img alt="" class=
-          "img-responsive modal-img" src="img/portfolio/hf.png">
+         <a href="mailto:jaimeyoon.je@gmail.com?Subject=Hello%"><div class="contact-btn"><i class="fa fa-envelope" aria-hidden="true"></i></div></a>
           
-        </div>
-        </div>
-      </div><!-- container -->
-    </div>
-  </div><!-- HAT FANCY -->
-  
-  
-     
-  <!-- ****************** GRAPHICS ****************** -->
-  <div aria-hidden="true" class="portfolio-modal modal fade" id=
-  "portfolioModal-dsn" role="dialog" tabindex="-1">
-    <div class="modal-content background-white">
-      <div class="project-right-buttons-panel">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="project-info-box">
-          <h3>DESIGN</h3>
-          <p>Various graphics that weren't included in the other projects.</p>
-          <div class="project-tags-modal">
-            <div class="p-tag-left p-blue">
-              Design
-            </div>
-            <div class="p-tag-left p-grey">
-              Logos
-            </div>
-            <div class="p-tag-left p-grey">
-              Icons
-            </div>
-            <div class="p-tag-left p-grey">
-              Photoshop
-            </div>
-            <div class="p-tag-left p-grey">
-              Illustrator
-            </div>
-            <div class="p-tag-left p-grey">
-              InDesign
-            </div>
-            <div class="p-tag-left p-grey">
-              Sketch
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="project-details-container background-lightGrey">
-        <div class="row row-portfolio">
-          <div class="col-lg-6 modal-col">
-            <img alt="" class="img-responsive modal-img" src=
-            "img/portfolio/graphic1.png">
-            <div class="project-blurb background-hotPink">
-              <h1>"In order to be irreplaceable one must always be different."</br></br>- Coco Chanel </h1>
-            </div>
-            <img alt="" class="img-responsive modal-img" src=
-            "img/portfolio/graphic13.png">
-          </div>
-          <div class="col-lg-6 modal-col">
-          <img alt="" class="img-responsive modal-img" src=
-          "img/portfolio/graphic12.png">
-          <img alt="" class="img-responsive modal-img" src=
-          "img/portfolio/graphic3.png">
-          <img alt="" class="img-responsive modal-img" src=
-          "img/portfolio/graphic5.png">
-          </div>
-        </div>
-      </div><!-- container -->
-    </div>
-  </div><!-- GRAPHICS -->
-  
-  
-  
-    <!-- ****************** PTF ****************** -->
-  <div aria-hidden="true" class="portfolio-modal modal fade" id=
-  "portfolioModal-ptf" role="dialog" tabindex="-1">
-    <div class="modal-content background-white">
-      <div class="project-right-buttons-panel">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="project-info-box">
-          <h3>Previous Portfolio Theme</h3>
-          <p>A custom responsive Bootstrap 3 portfolio theme.</p>
-          <div class="project-tags-modal">
-            <div class="p-tag-left p-blue">
-              Design
-            </div>
-            <div class="p-tag-left p-grey">
-              Bootstrap
-            </div>
-            <div class="p-tag-left p-grey">
-              HTML/CSS
-            </div>
-            <div class="p-tag-left p-grey">
-              Javascript
-            </div>
-            <div class="p-tag-left p-grey">
-              Photoshop
-            </div>
-            <div class="p-tag-left p-grey">
-              InDesign
-            </div>
-            <div class="p-tag-left p-grey">
-              Illustrator
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="project-details-container background-lightGrey">
-        <div class="row row-portfolio">
-          <div class="col-lg-6 modal-col">
-            <img alt="" class="img-responsive modal-img" src=
-            "img/portfolio/ptf1.png">
-            <div class="project-blurb background-orange">
-              <h1>All sections are fully responsive and features a letter shuffling crossword header.</h1>
-            </div>
-          </div>
-          <div class="col-lg-6 modal-col">
-          <div class="project-blurb background-lightPeriwinkle">
-            <h1>Winter is Coming...</h1>
-          </div>
-          <img alt="" class=
-          "img-responsive modal-img" src="img/portfolio/portfolio8.png">
-          <img alt="" class=
-          "img-responsive modal-img" src="img/portfolio/ptf2.png">
-        </div>
-        </div>
-      </div><!-- container -->
-    </div>
-  </div><!-- ptf -->
-  
-  
-  <!-- ****************** WEATHERIT ****************** -->
-  <div aria-hidden="true" class="portfolio-modal modal fade" id=
-  "portfolioModal-wi" role="dialog" tabindex="-1">
-    <div class="modal-content background-white">
-      <div class="project-right-buttons-panel">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="project-info-box">
-          <h3>WeatherIT</h3>
-          <p>A side project that I'm currently working on,  building off of WeatherVain written in Swift.</p>
-          <div class="project-tags-modal">
-            <div class="p-tag-left p-blue">
-              iOS
-            </div>
-            <div class="p-tag-left p-grey">
-              Swift
-            </div>
-            <div class="p-tag-left p-grey">
-              CocoaPods
-            </div>
-            <div class="p-tag-left p-grey">
-              Design
-            </div>
-            <div class="p-tag-left p-grey">
-              OpenWeatherMap API
-            </div>
-            <div class="p-tag-left p-grey">
-              Photoshop
-            </div>
-            <div class="p-tag-left p-grey">
-              Illustrator
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="project-details-container background-lightGrey">
-        <div class="row row-portfolio">
-          <div class="col-lg-6 modal-col">
-            <img alt="" class="img-responsive modal-img" src=
-            "img/portfolio/wi2.png">
-            <div class="project-blurb background-spearmint">
-              <h3><ul><li>  [DONE] Icon + Graphics</li>
-<li> [DONE] Login, Register and Logout functionality</li>
-<li> <span class="accent-pink">[TO DO]</span>  Login and Register View Controller design</li>
-<li> [DONE] Drawing from DB and setting up user closet (with correct temperature metric) upon registration</li>
-<li> [DONE] Swipe-out navigation</li>
-<li> [DONE] Retrieves json from OpenWeatherMap API using Sweather (displays on console)</li>
-<li> <span class="accent-pink">[TO DO]</span> Display weather on Weather View Controller and the Main View Controller</li>
-<li> [DONE] Outfit algorithm functionality (displays on console)</li>
-<li> <span class="accent-pink">[TO DO]</span> Display outfit on Main View Controller</li>
-<li> [DONE] Closet Collection View Controller</li>
-<li> [DONE] Items Collection View Controller</li>
-<li> [DONE] Add functionality of allowing users to set applicable temperatures for each individual item of clothing</li>
-<li> <span class="accent-pink">[TO DO]</span> Items View Controller needs design changes; not intuitive enough</li>
-<li> [DONE] Drawing from DB and setting up user closet upon registration (or hitting 'reset closet' button)</li>
-<li> Will add a navigation bar</li>
- <li> <span class="accent-pink">[TO DO]</span> Settings View Controller (allow users to change gender of closet, reset closet, change password, change e-mail, delete account)</li>
- </ul></h3>
-            </div>
-          </div>
-          
-          <div class="col-lg-6 modal-col">
-          <img alt="" class=
-          "img-responsive modal-img" src="img/portfolio/wi3.png">
-          <div class="project-blurb background-seafoam">
-            <h1>Started as a means to learn Swift 'Swift'ly. Ended up picking up an Open Source wrapper to the OpenWeatherMapAPI and fixing a bug.</h1>
-          </div>
-          <img alt="" class=
-          "img-responsive modal-img" src="img/portfolio/wi1.png">
-          </div>
-        </div>
-      </div><!-- container -->
-    </div>
-  </div><!-- WEATHERIT -->
-  
-
-  <!-- ****************** EXPIRIMENTS ****************** -->
-  <div aria-hidden="true" class="portfolio-modal modal fade" id=
-  "portfolioModal-css" role="dialog" tabindex="-1">
-    <div class="modal-content background-white">
-      <div class="project-right-buttons-panel">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="project-info-box">
-          <h3>CSS Experiments</h3>
-          <p>I am always trying out different techniques for front-end development. Currently experimenting with single div CSS illustrations, creating loaders with CSS animations and "painting" scenes through canvas. Note that these are screen grabs and recordings. Find the actual demos on my codepen.</p>
-          <div class="project-tags-modal">
-            <div class="p-tag-left p-blue">
-              CSS
-            </div>
-            <div class="p-tag-left p-grey">
-              HTML
-            </div>
-            <div class="p-tag-left p-grey">
-              Javascript
-            </div>
-            <div class="p-tag-left p-grey">
-              jQuery
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="project-details-container background-lightGrey">
-        <div class="row row-portfolio">
-          <div class="col-lg-6 modal-col">
-            <img alt="" class="img-responsive modal-img" src=
-            "img/portfolio/css1.png">
-            <div class="project-blurb background-darkGrey">
-              <h1>"Always desire to learn something useful."</br></br> -Sophocles</h1>
-            </div>
-            
-            <img alt="" class="img-responsive modal-img" src=
-          "img/portfolio/css3.gif">
-            <img alt="" class="img-responsive modal-img" src=
-          "img/portfolio/css2.png">
-          </div>
-          <div class="col-lg-6 modal-col"><img alt="" class=
-          "img-responsive modal-img" src="img/portfolio/css5.png">
-          <img alt="" class=
-          "img-responsive modal-img" src="img/portfolio/css.gif">
-          <img alt="" class="img-responsive modal-img" src=
-            "img/portfolio/css3.png">
-          <img alt="" class=
-          "img-responsive modal-img" src="img/portfolio/css1.gif">
-          <img alt="" class=
-          "img-responsive modal-img" src="img/portfolio/css2.gif">
-          
-          </div>
-        </div>
-      </div><!-- container -->
-    </div>
-  </div><!-- CSS -->  
-
-  
-  <script src="js/bootstrap.min.js">
-  </script> 
-  <script src="js/jquery-1.11.2.min.js">
-  </script> 
-  <script src="js/bootstrap.js">
-  </script> 
-  <script src="js/jquery.main.js">
-  </script> 
-  <script src="js/jquery.drawsvg.js">
-  </script> 
-  <script src="js/contact-svg.js">
-  </script> <!-- Custom Theme JavaScript -->   
-  
-  <script src="js/furelise.js">
-  </script> <!-- jquery -->
-   <!-- drawing -->
-   <!-- animation -->
-   
-  <script src="js/wow.min.js">
-  </script> <!-- type wrtier-->
-  <script src="js/typed.js">
-  </script> <!--<script type="text/javascript">
-$(document).ready(function(){
-     $("#myCarousel").carousel({
-         interval : 8000,
-         pause: false
-     });
-});
-</script> -->
-   
-  <script>
-  $(document).ready(function() {
-    
-    setTimeout(function(){
-        $('body').addClass('loaded');
-        $('h1').css('color','#222222');
-    }, 3700);
-    
-  });
-  </script> <!--
-  <script>
-  $('.carousel').carousel({
-    pause: true,
-    interval: false
-  });
-  </script> -->
-  <!--<script>
+             <a href="https://www.linkedin.com/in/jaimeyoon/"> <div class="contact-btn"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a>
               
-              $(function(){
-      $(".about-typewriter").typed({
-        strings: ["Hello, I am Jaime Yoon.",
-         "Programming is my career...",
-         "But also my hobby!"]
-        typeSpeed: 50,
-        backSpeed: 50,
-         backDelay: 1000,
-         loop: true,
-         showCursor: false,
+          <a href="https://github.com/jungeunyoon"><div class="contact-btn"><i class="fa fa-github" aria-hidden="true"></i></div></a>
+          
+         <a href="https://codepen.io/inthejungle/"> <div class="contact-btn"><i class="fa fa-codepen" aria-hidden="true"></i></div></a>
+        </div>
+          
+          
+          <h1 class="contact-info">I say hello.</h1>
+  <h2 class="contact-info">Hello. Hello.</h2>
 
-        cursorChar: "|"
-      });
-  }); 
+  <form name="htmlform" method="post" action="toyousender.php">
+
+    <input type="text" name="first_name" placeholder="NAME" required>
+
+    <input type="email" name="email" placeholder="E-MAIL" required>
+
+    <textarea name="comments" placeholder="MESSAGE" required></textarea>
+
+    <button name="send" type="submit" class="submit">SEND</button>
+
+  </form>
+
+  </div>
+
+  </div>
 
 
-  </script> -->
+  </section>
+
+  <section class="footer container-fluid" id="anchor-footer">
+
+    <div class="copyright-notice">
+      © 2017 Jaime J.E. Yoon
+    </div>
+  </section>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+
+
+  <!-- Living Direct -->
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="portfolio-modal modal fade" id="project-modal-ld" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-content project-modal-container" role="document">
+      <div class="project-header project-modal-header">
+        <div class="project-tags">
+          <div class="p-tag p-pink">
+            Living Direct Inc. <button aria-label="Close" class="close portfolio-close-btn" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 push-md-8 col-lg-3 push-lg-9 col-xl-2 push-xl-10 project-right-buttons-panel">
+            <div class="project-info-box">
+              <h3>Living Direct Inc.</h3>
+              <p>Software development for eight different E-commerce businesses, under Living Direct, Inc, a subsidy of Build.com.</p>
+              <div class="project-tags-modal">
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> E-commerce
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Demandware
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 pull-md-4 col-lg-9 pull-lg-3 col-xl-10 pull-xl-2 project-details-container  set-background" data-background-color="#ebebeb">
+            <div class="row row-portfolio">
+              <div class="col-lg-6 modal-col">
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/ld1.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#5a5a5a">
+                    <p>Implemented a system for customers to bundle items together to create custom appliances.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-blurb  set-background" data-background-color="#168e60">
+                  <h1>Won the LAGNIAPPE Award, which is given for excellence, dedication, leadership and innovation at each semi-annual company meeting, within the first sixth months.</h1>
+                </div>
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/ld5.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#5a5a5a">
+                    <p>Wrote jobs to pull in in relevant articles on a product-level, category-level basis.</p>
+                  </div>
+                </div>
+
+                <div class="project-blurb  set-background" data-background-color="#65635e">
+                  <h1>Created a means for customers to initiate returns online, significantly reducing the volume of calls to the call center.</h1>
+                </div>
+
+
+                                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/ld6.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#5a5a5a">
+                    <p>Toggle-enabled info header that pulls in content dynamically from server-side.</p>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-lg-6 modal-col">
+
+                <div class="project-blurb  set-background" data-background-color="#5a5a5a">
+                  <h1>Implemented a system end-to-end for customers to bundle items together, allowing them to order custom appliances. Raised conversion rate (CR) by 8% and average order value (AOV) by 27%.</h1>
+                </div>
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/ld2.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#5a5a5a">
+                    <p>Completely rewrote estimated delivery, beyond refactorization. Improved load time optimization by reducing estimated delivery calculations by 50%, even with the expansion of covering two more ship methods.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-blurb  set-background" data-background-color="#8a877e">
+                  <h1>Completed and closed 285 JIRA (task tracker) tickets within 9 months.</h1>
+                </div>
+
+
+                <img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/ld3.png">
+
+                                <div class="project-blurb  set-background" data-background-color="#7d7d7d">
+                  <h1>Helped create new coding and code review standards.</h1>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Used-PC's -->
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="portfolio-modal modal fade" id="project-modal-upc" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-content project-modal-container" role="document">
+      <div class="project-header project-modal-header">
+        <div class="project-tags">
+          <div class="p-tag p-pink">
+            Used-PCs.com<button aria-label="Close" class="close portfolio-close-btn" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class=" col-sm-12 col-md-4 push-md-8 col-lg-3 push-lg-9 col-xl-2 push-xl-10 project-right-buttons-panel">
+            <div class="project-info-box">
+              <h3>Used-PCs.com</h3>
+              <p>Full-stack web development for the E-commerce platform as a member of a marketing company, ColoredLion.</p>
+              <div class="project-tags-modal">
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Web Dev
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> SQL Scripting
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> PHP
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> BigCommerce
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> E-commerce
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 pull-md-4 col-lg-9 pull-lg-3 col-xl-10 pull-xl-2 project-details-container set-background" data-background-color="#ebebeb">
+            <div class="row row-portfolio">
+              <div class="col-lg-6 modal-col">
+                <img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/usedpcs5.png">
+                <div class="project-blurb set-background" data-background-color="#111c21">
+                  <h1>Automated several processes. Noteably overhauled the inventory system by writing scripts which reduced inventory update times from 13 manual hours to 15 minutes, even while expanding from one channel to four.</h1>
+                </div>
+                <img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/usedpcs7.png" />
+
+
+                <div class="project-blurb set-background" data-background-color="#969491">
+                  <h1>Added new features to the website such as a custom Product Detail Pages and global navigation bar.</h1>
+                </div>
+              </div>
+              <div class="col-lg-6 modal-col">
+                <div class="project-blurb set-background" data-background-color="#008bf7">
+
+                  <h1>Helped raise revenue by 33% within a year.</h1>
+                </div>
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/usedpcs8.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#111c21">
+                    <p>Designed and implemented a custom PDP. Shown: tech specs section and related products carousel.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-blurb set-background" data-background-color="#aeaba6">
+                  <h1>Launched new website design within a month of being hired, raising revenue by 8% from the previous year for Black Friday / Cyber Monday. </h1>
+                </div>
+
+                <img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/usedpcs3.png">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- WEATHERVAIN -->
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="portfolio-modal modal fade" id="project-modal-wv" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-content project-modal-container" role="document">
+      <div class="project-header project-modal-header">
+        <div class="project-tags">
+          <div class="p-tag p-pink">
+            WeatherVain <button aria-label="Close" class="close portfolio-close-btn" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 push-md-8 col-lg-3 push-lg-9 col-xl-2 push-xl-10 project-right-buttons-panel">
+            <div class="project-info-box">
+              <h3>WeatherVain</h3>
+              <p>Developer and designer for an iOS app prototype for a class that combined Computer Science and Journalism majors into teams.</p>
+              <div class="project-tags-modal">
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> iOS
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Objective-C
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> OpenWeatherAPI
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> CocoaPods
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Facebook Parse
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 pull-md-4 col-lg-9 pull-lg-3 col-xl-10 pull-xl-2 project-details-container set-background" data-background-color="#e6f5f4">
+            <div class="row row-portfolio">
+              <div class="col-lg-6 modal-col">
+                <img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/wv3.png">
+
+                <div class="project-blurb  set-background" data-background-color="#353c3d">
+                  <h1>"[Jaime] was the driving force behind the app. She has an incredible ability to develop a vision to solve really complex problems, and then to translate that vision into reality. She’s flat-out brilliant, and our team was lucky to have her."  </h1>
+                </div>
+
+                <div class="project-blurb  set-background" data-background-color="#303943">
+                  <h1>Named the [unofficial] MVP of the event by judges.</h1>
+                </div>
+              </div>
+              <div class="col-lg-6 modal-col">
+
+                <div class="project-blurb  set-background" data-background-color="#00a3c4">
+                  <h1>"Best Overall App" and "Most Original Idea" at the second annual University of Texas at Austin - Apps Demo Day.</h1>
+                </div>
+
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/90553836" allowfullscreen></iframe>
+                </div>
+
+                <div class="project-blurb  set-background" data-background-color="#c6e0dd">
+                  <h1>Wrote an algorithm that supplied more than 5200 outfit possiblities dependent on the weather and user preferences.</h1>
+                </div>
+
+
+                <img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/wv2.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Hat Fancy -->
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="portfolio-modal modal fade" id="project-modal-hf" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-content project-modal-container" role="document">
+      <div class="project-header project-modal-header">
+        <div class="project-tags">
+          <div class="p-tag p-pink">
+            Hat Fancy <button aria-label="Close" class="close portfolio-close-btn" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 push-md-8 col-lg-3 push-lg-9 col-xl-2 push-xl-10 project-right-buttons-panel">
+            <div class="project-info-box">
+              <h3>Hat Fancy</h3>
+              <p>Team lead for a web application that acts as a gateway to a database that lists the price data of items that can be purchased and sold among Dota 2 players.</p>
+              <div class="project-tags-modal">
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Web App
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Bootstrap
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> University
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Python
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> jQuery
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> AngularJS
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> API (Apiary)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 pull-md-4 col-lg-9 pull-lg-3 col-xl-10 pull-xl-2 project-details-container set-background" data-background-color="#e9e9e9">
+            <div class="row row-portfolio">
+              <div class="col-lg-6 modal-col">
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/hf1.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#2e2e2e">
+                    <p>Landing page with custom graphics.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-blurb set-background" data-background-color="#2e2e2e">
+                  <h1>Also setup the database, wrote tests and wrote 80% of the extensive technical report.</h1>
+                </div>
+
+                <img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/hf2.png">
+
+              </div>
+              <div class="col-lg-6 modal-col">
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/hf3.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#2e2e2e">
+                    <p>Created the relational model for the back-end.</p>
+                  </div>
+                </div>
+
+                <div class="project-blurb set-background" data-background-color="#cf1d39">
+                  <h1>Learned Twitter Bootstrap 3 and created a custom responsive front-end from scratch within 2 days. The only team to not use a premade theme.</h1>
+                </div>
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/hf.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#2e2e2e">
+                    <p>Two of the custom dynamic templates - about page and heroes page.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Themes -->
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="portfolio-modal modal fade" id="project-modal-portfolio" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-content project-modal-container" role="document">
+      <div class="project-header project-modal-header">
+        <div class="project-tags">
+          <div class="p-tag p-pink">
+            New Portfolio Theme<button aria-label="Close" class="close portfolio-close-btn" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 push-md-8 col-lg-3 push-lg-9 col-xl-2 push-xl-10 project-right-buttons-panel">
+            <div class="project-info-box">
+              <h3>Portfolio Theme</h3>
+              <p>Custom themes offered for free use for various different types of sites such as portfolios.</p>
+              <div class="project-tags-modal">
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> CSS / SASS
+                </div>
+                        <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> HTML
+                </div>        
+                
+                                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Javascript
+                </div>
+              
+                
+                <div class="p-tag-left p-grey">
+                  
+                  <span class="tag-icon lnr lnr-cart"></span> Design
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Photoshop
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Illustrator
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 pull-md-4 col-lg-9 pull-lg-3 col-xl-10 pull-xl-2 project-details-container  set-background" data-background-color="#ebebeb">
+            <div class="row row-portfolio">
+              <div class="col-lg-6 modal-col">
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/portfolio7.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#7f7a7b">
+                    <p>Playable, responsive  piano. Visually pure CSS.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-blurb  set-background" data-background-color="#7f7a7b">
+                  <h1>Intentionally pushed boundaries and went heavy on features to continue learning.</h1>
+                </div>
+
+                <img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/portfolio6.png">
+                  
+                   
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/portfolio3.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#7f7a7b">
+                    <p>Contact form.</p>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="col-lg-6 modal-col">
+
+
+                <img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/portfolio2.png">
+                 
+                
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/portfolio5.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#7f7a7b">
+                    <p>Responsive portfolio modals.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-blurb  set-background" data-background-color="#5a5a5a">
+                  <h1>Responsive, cross-browser, cross-device compatible.</h1>
+                </div>
+
+
+               <img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/portfolio1.png">
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Themes -->
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="portfolio-modal modal fade" id="project-modal-themes" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-content project-modal-container" role="document">
+      <div class="project-header project-modal-header">
+        <div class="project-tags">
+          <div class="p-tag p-pink">
+            Past Portfolio Themes<button aria-label="Close" class="close portfolio-close-btn" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 push-md-8 col-lg-3 push-lg-9 col-xl-2 push-xl-10 project-right-buttons-panel">
+            <div class="project-info-box">
+              <h3>Past Themes</h3>
+              <p>Past used custom portfolio themes. These will be offered for free use in the future. </p>
+              <div class="project-tags-modal">
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> HTML
+                </div>
+                                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> CSS
+                </div>
+                                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Javascript
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Design
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Photoshop
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Illustrator
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 pull-md-4 col-lg-9 pull-lg-3 col-xl-10 pull-xl-2 project-details-container  set-background" data-background-color="#ebebeb">
+            <div class="row row-portfolio">
+              
+              <div class="col-lg-6 modal-col">
+              <div class="project-blurb  set-background" data-background-color="#69706f">
+                  <h1>Features all fully responsive sections.</h1>
+                </div>
+              </div>
+              
+                            <div class="col-lg-6 modal-col">
+              <div class="project-blurb  set-background" data-background-color="#4b5150">
+                  <h1>Can be easily used by non-programmers.</h1>
+                </div>
+              </div>
+              
+              <div class="col-lg-12 modal-separator set-background" data-background-color="#1d2323"></div>
+              
+              <div class="col-lg-6 modal-col"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/themes-a-2.png">
+              </div>
+              
+
+             <div class="col-lg-6 modal-col"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/themes-a-1.png">
+
+              </div>
+              
+              
+                           <div class="col-lg-6 modal-col">
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/themes-a-3.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#4b5150">
+                    <p>Scroll-then-fix navigation bar.</p>
+                  </div>
+                </div>
+              </div>
+              
+              
+                           <div class="col-lg-6 modal-col">
+<img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/themes-a-0.png">
+
+              </div>
+              
+              
+              <div class="col-lg-12 modal-separator set-background" data-background-color="#1d2323"></div>
+              
+              <div class="col-lg-6 modal-col">
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/themes-b-1.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#4b5150">
+                    <p>Animated self-scrambling word search.</p>
+                  </div>
+                </div>
+              </div>
+  
+                            
+              <div class="col-lg-6 modal-col"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/themes-b-0.png">
+                 
+              </div>
+              
+              
+                            
+              <div class="col-lg-6 modal-col">
+                <img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/themes-b-2.png">
+                  
+              </div>
+              
+              
+                            
+              <div class="col-lg-6 modal-col"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/themes-b-3.png">
+                  
+              </div>
+              
+              <div class="col-lg-12 modal-separator set-background" data-background-color="#1d2323"></div> 
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Front-end Experiments -->
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="portfolio-modal modal fade" id="project-modal-css" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-content project-modal-container" role="document">
+      <div class="project-header project-modal-header">
+        <div class="project-tags">
+          <div class="p-tag p-pink">
+            Front-end experiments <button aria-label="Close" class="close portfolio-close-btn" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 push-md-8 col-lg-3 push-lg-9 col-xl-2 push-xl-10 project-right-buttons-panel">
+            <div class="project-info-box">
+              <h3>Front-end Experiments</h3>
+              <p>Continuously experimenting, always learning. Note that these are screen grabs and recordings.</p>
+              <div class="project-tags-modal">
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Front-end
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> HTML/CSS
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Javascript
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 pull-md-4 col-lg-9 pull-lg-3 col-xl-10 pull-xl-2 project-details-container  set-background" data-background-color="#ebebeb">
+            <div class="row row-portfolio">
+              <div class="col-lg-6 modal-col">
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/css5.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#b2b2b2">
+                    <p>A single-div CSS illustration of a cup of coffee.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-blurb  set-background" data-background-color="#b2b2b2">
+                  <h1>"Always desire to learn something useful."</br></br>
+
+-Sophocles.</h1>
+                </div>
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/css.gif">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#b2b2b2">
+                    <p>Purely CSS loader.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/css1.gif">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#b2b2b2">
+                    <p>Purely CSS pulsating loader.</p>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="col-lg-6 modal-col">
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/css3.gif">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#b2b2b2">
+                    <p>Scroll animation of SVG line drawing of the Empire State Building.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/css1.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#b2b2b2">
+                    <p>A single-div Superman logo making clever use of the box-shadow property.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/css2.gif">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#b2b2b2">
+                    <p>Purely CSS animation inspired by the phases of the moon.</p>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Design -->
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="portfolio-modal modal fade" id="project-modal-design" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-content project-modal-container" role="document">
+      <div class="project-header project-modal-header">
+        <div class="project-tags">
+          <div class="p-tag p-pink">
+            Design & Branding<button aria-label="Close" class="close portfolio-close-btn" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 push-md-8 col-lg-3 push-lg-9 col-xl-2 push-xl-10 project-right-buttons-panel">
+            <div class="project-info-box">
+              <h3>Design & Branding</h3>
+              <p>Various graphics that weren't included in the other projects. 15 years Photoshop experience.</p>
+              <div class="project-tags-modal">
+
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Design
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Photoshop
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Illustrator
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 pull-md-4 col-lg-9 pull-lg-3 col-xl-10 pull-xl-2 project-details-container  set-background" data-background-color="#ffe0ec">
+            <div class="row row-portfolio">
+              <div class="col-lg-6 modal-col">
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/graphic1.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#ff67ac">
+                    <p>Poster advertisement.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-blurb  set-background" data-background-color="#ff67ac">
+                  <h1>"In order to be irreplaceable one must always be different."</br></br>
+
+- Coco Chanel</h1>
+                </div>
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/graphic13.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#ff67ac">
+                    <p>Header graphic.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/graphic17.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#ff67ac">
+                    <p>Various logos for iOS applications, brands.</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-6 modal-col">
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/graphic16.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#ff67ac">
+                    <p>Branding for beer.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/graphic12.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#ff67ac">
+                    <p>Custom icons.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/graphic3.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#ff67ac">
+                    <p>Header graphic.</p>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Forums -->
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="portfolio-modal modal fade" id="project-modal-forum" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-content project-modal-container" role="document">
+      <div class="project-header project-modal-header">
+        <div class="project-tags">
+          <div class="p-tag p-pink">
+            Forum Skins & Templates<button aria-label="Close" class="close portfolio-close-btn" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 push-md-8 col-lg-3 push-lg-9 col-xl-2 push-xl-10 project-right-buttons-panel">
+            <div class="project-info-box">
+              <h3>Forum Templates</h3>
+              <p>Custom forum themes and templates for Jcink and Invisionfree sites.</p>
+              <div class="project-tags-modal">
+
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> HTML/CSS
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Javascript
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> DoHTML
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Market research
+                </div>
+                <div class="p-tag-left p-grey">
+                  <span class="tag-icon lnr lnr-cart"></span> Photoshop
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 pull-md-4 col-lg-9 pull-lg-3 col-xl-10 pull-xl-2 project-details-container  set-background" data-background-color="#f0f0f0">
+            <div class="row row-portfolio">
+              <div class="col-lg-6 modal-col">
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/forums.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#181818">
+                    <p>Custom skin with hover-enabled custom thread templates.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-blurb  set-background" data-background-color="#181818">
+                  <h1>Thread templates (not pictured) used by over 2,000 individuals.</h1>
+                </div>
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/forums6.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#181818">
+                    <p>Custom skin with carousel information bar.</p>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="col-lg-6 modal-col">
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/forums2.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#181818">
+                    <p>Custom skin with carousel inside a static side-bar - a trend that would be copied by a majority of the leading forums. </p>
+                  </div>
+                </div>
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/forums5.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#181818">
+                    <p>Custom skin with complete modiciation of default forum layout, meaning that it was completely customized with javascript.</p>
+                  </div>
+                </div>
+
+
+                <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/forums7.png">
+                  <span class="lnr lnr-eye caption-cta"></span>
+                  <div class="project-image-caption set-background" data-background-color="#181818">
+                    <p>Custom skin and thread template.</p>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="js/cestlavie.js"></script>
+
 </body>
+
+
 </html>
