@@ -187,11 +187,12 @@ a.navbar-brand {
   height: 100vh;
 }
 #sidebar-wrapper .sidebar-menu #sidebar-title-container {
-  position: absolute;
-  width: 300px;
-  left: 70px;
-  top: 130px;
-  z-index: 10000;
+    position: absolute;
+    width: 290px;
+    height: 60px;
+    left: 90px;
+    top: 137px;
+    z-index: 10000;
   -ms-transform: rotate(-90deg);
   /* IE 9 */
   -webkit-transform: rotate(-90deg);
@@ -200,11 +201,37 @@ a.navbar-brand {
   /* Standard syntax */
 }
 #sidebar-wrapper .sidebar-menu #sidebar-title-container #sidebar-title {
-  color: #888888;
-  font-size: 20px;
-  font-family: "Karla", sans-serif;
-  width: 500px;
+    color: #999;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Karla", sans-serif;
+    position: relative;
+    top: -10px;
+    left: 7px;
+    letter-spacing: 5px;
+    text-align: center;
+
 }
+
+#sidebar-wrapper .sidebar-menu #sidebar-title-container #sidebar-title .title {
+background: #fafafa;
+    padding-right: 3px;
+    padding-left: 3px;
+
+}
+
+#sidebar-wrapper .sidebar-menu #sidebar-title-container #sidebar-title::before {
+    border-top: 1px solid #dfdfdf;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    }
 #sidebar-wrapper .sidebar-menu #sidebar-links-container {
   position: absolute;
   z-index: 9999;
@@ -214,6 +241,15 @@ a.navbar-brand {
   display: block;
   margin-top: 10px;
 }
+
+#sidebar-wrapper .sidebar-menu #sidebar-title-container #sidebar-subtitle {
+    position: relative;
+    top: -13px;
+    font-style: italic;
+    font-size: 39px;
+    text-align: center;
+    }
+    
 #sidebar-wrapper .sidebar-menu #sidebar-links-container .sidebar-link {
   padding: 5px 8px;
   background-color: #fff;
@@ -265,7 +301,7 @@ section.about::before {
 section.about {
   height: auto;
   min-height: 100vh;
-  padding: 230px 50px 30px 50px;
+  padding: 32vh 50px 30px 50px;
   background-color: #cc8f90;
 }
 
