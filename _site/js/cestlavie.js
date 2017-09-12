@@ -385,7 +385,6 @@ function initiateAlertMessages(){
  * Main functionality
  */
 $(document).ready(function() {
-
 	initiatePianoFunctionality();
 	
     initiateBackgroundColors();
