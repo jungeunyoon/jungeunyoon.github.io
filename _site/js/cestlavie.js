@@ -395,4 +395,10 @@ $(document).ready(function() {
 	initiateSmoothScroll();
 
 	initiateAlertMessages();
+	
+	// visuals: hide loader once initialization complete
+	setTimeout(function(){
+		$('body').removeClass('disable-scrolling');
+		$('#heartbeart-loader').addClass('loaded-fade-out');
+	}, 3700);
 });
