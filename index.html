@@ -34,7 +34,12 @@
 
 </head>
 
-<body>
+<body class="disable-scrolling">
+  <!-- Loader -->
+  <section class="loader" id="heartbeart-loader">
+    <div class="heartbeat-loader-container"><svg xmlns="http://www.w3.org/2000/svg" id="heartbeat-svg" data-name="Layer 1" viewBox="0 0 1700.02 433.37"><defs><style>.cls-1{fill:none;stroke:#ffffff;stroke-miterlimit:10;stroke-width:5px;}</style></defs><title>heartbeat</title><path stroke="#ffffff" class="cls-1" id="heartbeat-path" d="M0.02 293.53 623.71 291.07 665.88 229.19 733.04 414.52 807.51 22.53 891.1 337.37 953.42 244.77 997.34 293.47 997.35 293.47 1700.02 293.59"/></svg>
+      <div>
+  </section>
 
   <!-- Navigation -->
   <nav class="hidden-md-up navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
@@ -51,7 +56,7 @@
           <a class="nav-link" href="#anchor-about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#anchor-about">Portfolio</a>
+          <a class="nav-link" href="#anchor-portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#anchor-contacts">Contact</a>
@@ -78,7 +83,7 @@
         <a href="#anchor-about"><div class="sidebar-link" id="sidebar-about-btn"><span class="lnr lnr-user"></span></div></a>
         
         <a href="#anchor-portfolio"><div class="sidebar-link" id="sidebar-portfolio-btn"><span class="lnr lnr-laptop"></span></div></a>
-        <a href="#anchor-testimonials"><div class="sidebar-link" id="sidebar-testimonials-btn"><span class="lnr lnr-bubble"></span></div></a>
+        <a href="#anchor-testimonials"><div class="sidebar-link hidden" id="sidebar-testimonials-btn"><span class="lnr lnr-bubble"></span></div></a>
         <a href="#anchor-contacts"><div class="sidebar-link" id="sidebar-contacts-btn"><span class="lnr lnr-phone"></span></div></a>
       </div>
         </div>
@@ -132,7 +137,7 @@
               <div class="play-text">
                 play me<span class="hidden-sm-down"> or click buttons</span>
               </div>
-              <div class="songs">
+              <div class="songs hidden-xs-down">
                 <button id="furElise" onclick="playFurElise()"></button>
                 <button id="hedwigsTheme" onclick="playHedwigsTheme()"></button>
               </div>
@@ -586,7 +591,7 @@
                 <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/ld2.png">
                   <span class="lnr lnr-eye caption-cta"></span>
                   <div class="project-image-caption set-background" data-background-color="#5a5a5a">
-                    <p>Completely rewrote estimated delivery, beyond refactorization. Improved load time optimization by reducing estimated delivery calculations by 50%, even with the expansion of covering two more ship methods.</p>
+                    <p>Completely rewrote estimated delivery, beyond refactoring. Improved load time optimization by reducing estimated delivery calculations by 50%, even with the expansion of covering two more ship methods.</p>
                   </div>
                 </div>
 
@@ -675,7 +680,7 @@
 
 
                 <div class="project-blurb set-background" data-background-color="#aeaba6">
-                  <h1>Launched new website design within a month of being hired, raising revenue by 8% from the previous year for Black Friday / Cyber Monday. </h1>
+                  <h1>Launched new website design, raising revenue by 8% from the previous year for Black Friday / Cyber Monday. </h1>
                 </div>
 
                 <img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/usedpcs3.png">
@@ -748,7 +753,7 @@
                 </div>
 
                 <div class="project-blurb  set-background" data-background-color="#c6e0dd">
-                  <h1>Wrote an algorithm that supplied more than 5200 outfit possiblities dependent on the weather and user preferences.</h1>
+                  <h1>Wrote an algorithm that supplied more than 5200 outfit possibilities dependent on the weather and user preferences.</h1>
                 </div>
 
 
@@ -831,7 +836,7 @@
                 </div>
 
                 <div class="project-blurb set-background" data-background-color="#cf1d39">
-                  <h1>Learned Twitter Bootstrap 3 and created a custom responsive front-end from scratch within 2 days. The only team to not use a premade theme.</h1>
+                  <h1>Learned Twitter Bootstrap 3 and created a custom responsive front-end from scratch within 2 days. The only team to not use a pre-made theme.</h1>
                 </div>
 
                 <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/hf.png">
@@ -875,7 +880,7 @@
                 </div>        
                 
                                 <div class="p-tag-left p-grey">
-                  <span class="tag-icon lnr lnr-cart"></span> Javascript
+                  <span class="tag-icon lnr lnr-cart"></span> JavaScript
                 </div>
               
                 
@@ -981,7 +986,7 @@
                   <span class="tag-icon lnr lnr-cart"></span> CSS
                 </div>
                                 <div class="p-tag-left p-grey">
-                  <span class="tag-icon lnr lnr-cart"></span> Javascript
+                  <span class="tag-icon lnr lnr-cart"></span> JavaScript
                 </div>
                 <div class="p-tag-left p-grey">
                   <span class="tag-icon lnr lnr-cart"></span> Design
@@ -1100,7 +1105,7 @@
                   <span class="tag-icon lnr lnr-cart"></span> HTML/CSS
                 </div>
                 <div class="p-tag-left p-grey">
-                  <span class="tag-icon lnr lnr-cart"></span> Javascript
+                  <span class="tag-icon lnr lnr-cart"></span> JavaScript
                 </div>
               </div>
             </div>
@@ -1300,7 +1305,7 @@
                   <span class="tag-icon lnr lnr-cart"></span> HTML/CSS
                 </div>
                 <div class="p-tag-left p-grey">
-                  <span class="tag-icon lnr lnr-cart"></span> Javascript
+                  <span class="tag-icon lnr lnr-cart"></span> JavaScript
                 </div>
                 <div class="p-tag-left p-grey">
                   <span class="tag-icon lnr lnr-cart"></span> DoHTML
@@ -1355,7 +1360,7 @@
                 <div class="project-image-container"><img alt="" class="img-fluid product-img" src="http://www.jaimeyoon.com/img/portfolio/forums5.png">
                   <span class="lnr lnr-eye caption-cta"></span>
                   <div class="project-image-caption set-background" data-background-color="#181818">
-                    <p>Custom skin with complete modiciation of default forum layout, meaning that it was completely customized with javascript.</p>
+                    <p>Custom skin with complete modification of default forum layout, meaning that it was completely customized with JavaScript.</p>
                   </div>
                 </div>
 

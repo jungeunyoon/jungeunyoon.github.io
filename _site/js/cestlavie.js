@@ -367,10 +367,12 @@ function initiateSmoothScroll(){
 }
 
 /**
- * alertMessagesEventHandlers()
+ * initiateAlertMessages()
  * Event handlers for alert messages
  */
-function alertMessagesEventHandlers(){
+function initiateAlertMessages(){
+
+	// testimonials error message
     $("#sidebar-testimonials-btn").click(function() {
         $("#testimonials-alert").show();
         setTimeout(function() {
@@ -393,4 +395,10 @@ $(document).ready(function() {
 	initiateSmoothScroll();
 
 	initiateAlertMessages();
+	
+	// visuals: hide loader once initialization complete
+	setTimeout(function(){
+		$('body').removeClass('disable-scrolling');
+		$('#heartbeart-loader').addClass('loaded-fade-out');
+	}, 3700);
 });
