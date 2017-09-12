@@ -116,6 +116,7 @@ section.loader {
 .loaded-fade-out {
     opacity: 0 !important;
     transition: 1s opacity !important;
+    z-index: -300000 !important;
 }
 
 .disable-scrolling {
