@@ -367,10 +367,12 @@ function initiateSmoothScroll(){
 }
 
 /**
- * alertMessagesEventHandlers()
+ * initiateAlertMessages()
  * Event handlers for alert messages
  */
-function alertMessagesEventHandlers(){
+function initiateAlertMessages(){
+
+	// testimonials error message
     $("#sidebar-testimonials-btn").click(function() {
         $("#testimonials-alert").show();
         setTimeout(function() {

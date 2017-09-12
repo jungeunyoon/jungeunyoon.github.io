@@ -27,10 +27,7 @@ h2 {
   font-family: "Karla", sans-serif;
   color: #3b3f45;
   letter-spacing: 10px;
-}
-
-h2 {
-  font: 33px sans-serif;
+  font-size: 33px;
   margin-top: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -157,6 +154,7 @@ a.navbar-brand {
  *************************************/
 #wrapper {
   padding-left: 250px;
+  margin: 0px;
 }
 
 #page-content-wrapper {
@@ -372,7 +370,7 @@ section.contacts {
   min-height: 100vh;
   height: auto;
   background-color: #9c9ca2;
-  padding: 30px 0px 150px 0px;
+  padding: 30px 0px 100vh 0px;
 }
 
 section.footer::before {
@@ -1335,6 +1333,7 @@ a .contact-btn:hover {
 /*************************************
  * MEDIA QUERIES
  *************************************/
+
 @media (max-width: 99.99em) {
   .contact-form {
     width: 500px !important;
@@ -1398,6 +1397,7 @@ a .contact-btn:hover {
     left: 316px;
   }
 }
+
 @media (max-width: 61.99em) {
   .contacts-container {
     left: 75% !important;
@@ -1475,7 +1475,12 @@ a .contact-btn:hover {
     left: 269px;
   }
 }
+
 @media (max-width: 47.99em) {
+  section.contacts {
+    padding: 30px 0px 130vh 0px;
+  }
+  
   .songs {
     padding: 10px 25px 0px 0px;
   }
@@ -1491,6 +1496,7 @@ a .contact-btn:hover {
 
   #wrapper {
     padding-left: 0px;
+    margin: 0px;
   }
 
   .piano {
@@ -1556,11 +1562,21 @@ a .contact-btn:hover {
     height: auto;
   }
 }
+
 @media (max-width: 33.99em) {
+  h2 {
+    letter-spacing: 7px;
+    font-size: 25px;
+  }
+
+  section.about {
+    min-height: unset;
+  }
+  
   #furElise, #hedwigsTheme {
     margin-left: 0px;
   }
-
+  
   .contacts-container {
     left: 50% !important;
     transform: translateX(-50%) translateY(-33%) !important;
