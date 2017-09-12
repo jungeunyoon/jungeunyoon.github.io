@@ -109,7 +109,7 @@ section.loader {
     background: #cc8f90;
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     z-index: 300000;
 }
 
